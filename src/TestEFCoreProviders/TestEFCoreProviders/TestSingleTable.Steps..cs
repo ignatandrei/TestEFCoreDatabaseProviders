@@ -63,6 +63,36 @@ public partial class TestSingleTable: FeatureFixture
         var db = await ctx();
         await db.DepartmentDelete(id);
     }
+    async Task When_Search_For_id1_and_id2_is_success(int id1,int id2)
+    {
+        var db = await ctx();
+        var search =SearchDepartment.FromSearch(GeneratorFromDB.SearchCriteria.InArray, eDepartmentColumns.IDDepartment, $"{id1},{id2}");
+        var data= await db.DepartmentFind_Array(search);
+        data.Should().NotBeNull();
+        data.Should().HaveCount(2);
+
+
+    }
+    async Task When_Search_For_Name_That_Is_Criteria_For_searchString_the_results_number_are(string  searchString, GeneratorFromDB.SearchCriteria criteria, int are)
+    {
+        var db = await ctx();
+        var search = SearchDepartment.FromSearch(criteria, eDepartmentColumns.Name, searchString);
+        var data = await db.DepartmentFind_Array(search);
+        data.Should().NotBeNull();
+        data.Should().HaveCount(are);
+
+
+    }
+    async Task When_Search_For_Id_That_Is_Criteria_Than_nr_the_results_number_are (int nr, GeneratorFromDB.SearchCriteria criteria,int are)
+    {
+        var db = await ctx();
+        var search = SearchDepartment.FromSearch(criteria, eDepartmentColumns.IDDepartment, nr.ToString());
+        var data = await db.DepartmentFind_Array(search);
+        data.Should().NotBeNull();
+        data.Should().HaveCount(are);
+
+
+    }
 
     async Task When_Modify_Department_With_id_and_name(int id, string name)
     {

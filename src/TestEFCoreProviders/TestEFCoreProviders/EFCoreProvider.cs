@@ -1,6 +1,4 @@
-﻿
-
-namespace TestEFCoreProviders;
+﻿namespace TestEFCoreProviders;
 
 public enum EFCoreProvider
 {
