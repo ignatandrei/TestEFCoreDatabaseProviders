@@ -7,9 +7,12 @@ class StartDatabase: IAsyncDisposable
     
     private SqliteConnection? _connection;//necessary for sqlite
     IContainer? Container;
+    string connectionStringCache = "";
+    EFCoreProvider coreProviderCache = EFCoreProvider.None;
     async Task<string> GetConnectionString(EFCoreProvider provider)
     {
-        string connectionString="";
+        if(connectionStringCache.Length>0)
+            return connectionStringCache;
         var newDB = "test" + Guid.NewGuid().ToString("N");
         switch (provider)
         {
@@ -25,17 +28,17 @@ class StartDatabase: IAsyncDisposable
                     SqlConnectionStringBuilder builder = new(msSql.GetConnectionString());
                     builder.InitialCatalog = newDB;
                     builder.PersistSecurityInfo= true;
-                    connectionString = builder.ConnectionString;
+                    connectionStringCache = builder.ConnectionString;
                     break;
                 }
             case EFCoreProvider.Microsoft_EntityFrameworkCore_In_Memory:
-                connectionString= newDB;
+                connectionStringCache= newDB;
                 break;
             case EFCoreProvider.Microsoft_EntityFrameworkCore_Sqlite_In_Memory:
-                connectionString= $"Filename=:memory:";
+                connectionStringCache= $"Filename=:memory:";
                 break;
             case EFCoreProvider.Microsoft_EntityFrameworkCore_Sqlite_File:
-                connectionString= $"Data Source={newDB}.db";
+                connectionStringCache= $"Data Source={newDB}.db";
                 break;
             case EFCoreProvider.Npgsql_EntityFrameworkCore_PostgreSQL:
                 {
@@ -47,7 +50,7 @@ class StartDatabase: IAsyncDisposable
                     NpgsqlConnectionStringBuilder builder = new(postgreSqlContainer.GetConnectionString());
                     builder.Database = newDB;
                     builder.PersistSecurityInfo = true;
-                    connectionString =builder.ConnectionString;
+                    connectionStringCache =builder.ConnectionString;
                     break;
                 }
             case EFCoreProvider.Pomelo_EntityFrameworkCore_MySql:
@@ -62,7 +65,7 @@ class StartDatabase: IAsyncDisposable
                     builder.Database = newDB;
                     builder.PersistSecurityInfo = true;
                     builder.UserID = "root";
-                    connectionString = builder.ConnectionString;
+                    connectionStringCache = builder.ConnectionString;
                     break;
                 }
             case EFCoreProvider.MySql_EntityFrameworkCore:
@@ -77,7 +80,7 @@ class StartDatabase: IAsyncDisposable
                     builder.Database = newDB;
                     builder.PersistSecurityInfo = true;
                     builder.UserID = "root";
-                    connectionString= builder.ConnectionString;
+                    connectionStringCache= builder.ConnectionString;
                     break;
                 }
             case EFCoreProvider.Microsoft_EntityFrameworkCore_Cosmos:
@@ -87,14 +90,14 @@ class StartDatabase: IAsyncDisposable
       .Build();
                     await cosmosDbContainer.StartAsync();
                     this.Container = cosmosDbContainer;
-                    connectionString= cosmosDbContainer.GetConnectionString();
+                    connectionStringCache= cosmosDbContainer.GetConnectionString();
                     break;
                 }
             default:
                 throw new ArgumentException("not know database for "+ provider);
         }
-        StepExecution.Current.Comment("connection : " + connectionString);
-        return connectionString;
+        StepExecution.Current.Comment("connection : " + connectionStringCache);
+        return connectionStringCache;
     }
     private T? GetContextFromConnection<T>(string con, EFCoreProvider provider)
         where T : DbContext
@@ -149,10 +152,18 @@ class StartDatabase: IAsyncDisposable
         }
         return Activator.CreateInstance(typeof(T), builder.Options) as T;
     }
-
+    public async Task<T> GetNewContext<T>()
+         where T : DbContext
+    {
+        var con = await GetConnectionString(coreProviderCache);
+        var data= GetContextFromConnection<T>(con, coreProviderCache);
+        ArgumentNullException.ThrowIfNull(data);
+        return data;
+    }
     public async Task<T?> GetContext<T>(EFCoreProvider provider)
          where T : DbContext
     {
+        coreProviderCache = provider;
         var con = await GetConnectionString(provider);        
         return GetContextFromConnection<T>(con, provider);
     }
@@ -161,9 +172,10 @@ class StartDatabase: IAsyncDisposable
         
         if (Container != null)
         {
+            //await Task.Delay(60_000);
             await Container.StopAsync();
             await Container.DisposeAsync();
-            await Task.Delay(10_000);
+          
         }
         if(_connection != null)
             _connection.Dispose();

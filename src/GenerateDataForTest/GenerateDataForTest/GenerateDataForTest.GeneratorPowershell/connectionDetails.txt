@@ -3,12 +3,12 @@
 	"connections":[
 	{
 		"Enabled":true,
-		"NameContext": "ApplicationDBContext",
+		"NameContext": "SimpleTableDBContext",
 		"Provider": "Microsoft.EntityFrameworkCore.SqlServer",
 		"ProjectForContext": "..\\GenerateDataForTest.Context\\GenerateDataForTest.Context.csproj",
 		"ProjectForClasses": "..\\GenerateDataForTest.Models\\GenerateDataForTest.Models.csproj",
 		"ProjectWithDesigner": "..\\GenerateDataForTest.Controllers\\GenerateDataForTest.Controllers.csproj",
-		"ConnectionString":"Data Source=.;Initial Catalog=tests;UId=sa;pwd=<YourStrong@Passw0rd>;TrustServerCertificate=true;",
+		"ConnectionString":"Data Source=.;Initial Catalog=SimpleTableDBContext;UId=sa1;pwd=<YourStrong@Passw0rd>;TrustServerCertificate=true;",
 		"ConnectionString1":"Data Source=sqlservertestdbep.database.windows.net;Initial Catalog=tests;UId=myadmin;pwd=p@rola123;TrustServerCertificate=true;",
 		"ProjectCRA":"..\\GenerateDataForTest.GeneratorCRA\\GenerateDataForTest.GeneratorCRA.csproj"
 	},

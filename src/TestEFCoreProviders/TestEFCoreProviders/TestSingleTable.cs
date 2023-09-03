@@ -8,19 +8,21 @@ public partial class TestSingleTable:IScenarioTearDown
     {
         startDatabase = new StartDatabase();
     }
-
+     
     [Scenario]
     //[MultiAssert]
     //[InlineData(EFCoreProvider.Microsoft_EntityFrameworkCore_SqlServer)]
-    //[InlineData(EFCoreProvider.Microsoft_EntityFrameworkCore_In_Memory)]
+    [InlineData(EFCoreProvider.Microsoft_EntityFrameworkCore_In_Memory)]
     //[InlineData(EFCoreProvider.Microsoft_EntityFrameworkCore_Sqlite_In_Memory)]
     //[InlineData(EFCoreProvider.Npgsql_EntityFrameworkCore_PostgreSQL)]
     //[InlineData(EFCoreProvider.Pomelo_EntityFrameworkCore_MySql)]
     //[InlineData(EFCoreProvider.MySql_EntityFrameworkCore)]
-    [InlineData(EFCoreProvider.Microsoft_EntityFrameworkCore_Cosmos)]
+    //[InlineData(EFCoreProvider.Microsoft_EntityFrameworkCore_Cosmos)]
     public async Task CrudSimpleTable(EFCoreProvider provider)
     {
         var nrDeps = 5;
+        string newName = Guid.NewGuid().ToString("N");
+
         await Runner
             .AddAsyncSteps(
             _ => Given_The_Database_IsCreated(provider),
@@ -28,7 +30,10 @@ public partial class TestSingleTable:IScenarioTearDown
             _=> When_Creating_Nr_Departments(nrDeps),
             _=>Then_Number_Of_Dep_Are_Nr(nrDeps),
             _=> When_Deleting_Department_With_id(2),
-            _=>Then_Number_Of_Dep_Are_Nr(nrDeps-1)
+            _=>Then_Number_Of_Dep_Are_Nr(nrDeps-1),
+            _=> When_Modify_Department_With_id_and_name(nrDeps-1,newName),
+            _=> Then_For_id_has_name(nrDeps-1,newName)
+
             )
             .RunAsync();
         

@@ -1,7 +1,7 @@
 ﻿
 
 
-# ApplicationDBContext
+# SimpleTableDBContext
 
 ```mermaid
 erDiagram

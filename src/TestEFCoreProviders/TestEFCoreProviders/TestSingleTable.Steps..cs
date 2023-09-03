@@ -14,7 +14,16 @@ public partial class TestSingleTable: FeatureFixture
     async Task Given_The_Database_IsCreated(EFCoreProvider provider)
     {
         string tables = string.Join(",",SimpleTableDBContext.metaData.TableNames);
-        StepExecution.Current.Comment($"tables {tables}");        
+        StepExecution.Current.Comment($"tables {tables}");
+        foreach (var table in SimpleTableDBContext.metaData.Tables)
+        {
+            StepExecution.Current.Comment($"table {table.Name}");
+            foreach(var col in table.Columns)
+            {
+                StepExecution.Current.Comment($"column => {col.Type} {col.Name} ");
+            }
+        }
+        
         context =await startDatabase.GetContext<SimpleTableDBContext>(provider);
         ArgumentNullException.ThrowIfNull(context);
         StepExecution.Current.Comment("before created");
@@ -25,7 +34,7 @@ public partial class TestSingleTable: FeatureFixture
         catch (Exception ex)
         {
             TestOutput.WriteLine("!!!"+ex.ToString());
-            await Task.Delay(60_000);
+            //await Task.Delay(60_000);
             throw;
         }
         StepExecution.Current.Comment("after created");
@@ -52,6 +61,26 @@ public partial class TestSingleTable: FeatureFixture
         var db = ctx();
         await db.DepartmentDelete(id);
     }
+
+    async Task When_Modify_Department_With_id_and_name(int id, string name)
+    {
+        using var db = await startDatabase.GetNewContext<SimpleTableDBContext>();
+        
+        var dep=new Department();
+        dep.IDDepartment= id;
+        dep.Name= name;
+        await db.DepartmentModify(dep);
+    }
+    async Task Then_For_id_has_name(int id, string name)
+    {
+        using var db = await startDatabase.GetNewContext<SimpleTableDBContext>();
+        var dep=await db.DepartmentGetSingle(id);
+        dep.Should().NotBeNull();
+        dep!.Name.Should().Be(name);
+        
+    }
+
+
 
 
 }
