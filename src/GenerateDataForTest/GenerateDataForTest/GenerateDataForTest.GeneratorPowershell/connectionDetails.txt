@@ -1,0 +1,38 @@
+{
+	"version":"2022.7.11.615",
+	"connections":[
+	{
+		"Enabled":true,
+		"NameContext": "ApplicationDBContext",
+		"Provider": "Microsoft.EntityFrameworkCore.SqlServer",
+		"ProjectForContext": "..\\GenerateDataForTest.Context\\GenerateDataForTest.Context.csproj",
+		"ProjectForClasses": "..\\GenerateDataForTest.Models\\GenerateDataForTest.Models.csproj",
+		"ProjectWithDesigner": "..\\GenerateDataForTest.Controllers\\GenerateDataForTest.Controllers.csproj",
+		"ConnectionString":"Data Source=.;Initial Catalog=tests;UId=sa;pwd=<YourStrong@Passw0rd>;TrustServerCertificate=true;",
+		"ConnectionString1":"Data Source=sqlservertestdbep.database.windows.net;Initial Catalog=tests;UId=myadmin;pwd=p@rola123;TrustServerCertificate=true;",
+		"ProjectCRA":"..\\GenerateDataForTest.GeneratorCRA\\GenerateDataForTest.GeneratorCRA.csproj"
+	},
+	{
+		"Enabled":false,
+		"Provider": "Microsoft.EntityFrameworkCore.SqlServer",
+		"ProjectForContext": "..\\GenerateDataForTest.Context\\GenerateDataForTest.Context.csproj",
+		"ProjectForClasses": "..\\GenerateDataForTest.Models\\GenerateDataForTest.Models.csproj",
+		"ProjectWithDesigner": "..\\GenerateDataForTest.Controllers\\GenerateDataForTest.Controllers.csproj",
+		"NameContext": "PubsDBContext",
+		"ConnectionString":"Data Source=.;Initial Catalog=pubs;UId=sa;pwd=<YourStrong@Passw0rd>;TrustServerCertificate=true;",
+		"ConnectionString1":"Data Source=sqlservertestdbep.database.windows.net;Initial Catalog=pubs;UId=myadmin;pwd=p@rola123;TrustServerCertificate=true;",
+		"ProjectCRA":"..\\GenerateDataForTest.GeneratorCRA\\GenerateDataForTest.GeneratorCRA.csproj"
+	},
+	{
+		"Enabled":false,
+		"Provider": "Microsoft.EntityFrameworkCore.SqlServer",
+		"ProjectForContext": "..\\GenerateDataForTest.Context\\GenerateDataForTest.Context.csproj",
+		"ProjectForClasses": "..\\GenerateDataForTest.Models\\GenerateDataForTest.Models.csproj",
+		"ProjectWithDesigner": "..\\GenerateDataForTest.Controllers\\GenerateDataForTest.Controllers.csproj",
+		"NameContext": "NorthwindDBContext",
+		"ConnectionString":"Data Source=.;Initial Catalog=Northwind;UId=sa;pwd=<YourStrong@Passw0rd>;TrustServerCertificate=true;",
+		"ConnectionString1":"Data Source=sqlservertestdbep.database.windows.net;Initial Catalog=Northwind;UId=myadmin;pwd=p@rola123;TrustServerCertificate=true;",
+		"ProjectCRA":"..\\GenerateDataForTest.GeneratorCRA\\GenerateDataForTest.GeneratorCRA.csproj"
+	}
+	]
+}
