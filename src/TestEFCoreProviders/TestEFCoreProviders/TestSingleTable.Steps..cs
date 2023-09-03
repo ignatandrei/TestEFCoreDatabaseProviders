@@ -5,8 +5,7 @@ using System.Linq;
 namespace TestEFCoreProviders;
 public partial class TestSingleTable: FeatureFixture
 {
-    SimpleTableDBContext? context=null;
-    private SqliteConnection? _connection;//necessary for sqlite
+    SimpleTableDBContext? context = null;
     SimpleTableDBContext ctx()
     {
         ArgumentNullException.ThrowIfNull(context);
@@ -15,14 +14,20 @@ public partial class TestSingleTable: FeatureFixture
     async Task Given_The_Database_IsCreated(EFCoreProvider provider)
     {
         string tables = string.Join(",",SimpleTableDBContext.metaData.TableNames);
-        StepExecution.Current.Comment($"tables {tables}");
-        
-        var con = await GetConnectionString(provider);
-        StepExecution.Current.Comment($"connection string:{con}");
-        context = GetContext<SimpleTableDBContext>(con, provider);
+        StepExecution.Current.Comment($"tables {tables}");        
+        context =await startDatabase.GetContext<SimpleTableDBContext>(provider);
         ArgumentNullException.ThrowIfNull(context);
         StepExecution.Current.Comment("before created");
-        await context.Database.EnsureCreatedAsync();
+        try
+        {
+            await context.Database.EnsureCreatedAsync();
+        }
+        catch (Exception ex)
+        {
+            TestOutput.WriteLine("!!!"+ex.ToString());
+            await Task.Delay(60_000);
+            throw;
+        }
         StepExecution.Current.Comment("after created");
 
     }
