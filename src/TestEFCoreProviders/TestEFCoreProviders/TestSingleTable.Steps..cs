@@ -5,11 +5,12 @@ using System.Linq;
 namespace TestEFCoreProviders;
 public partial class TestSingleTable: FeatureFixture
 {
-    SimpleTableDBContext? context = null;
-    SimpleTableDBContext ctx()
+    
+    async Task<SimpleTableDBContext> ctx()
     {
-        ArgumentNullException.ThrowIfNull(context);
-        return context ;
+        
+        return await startDatabase.GetNewContext<SimpleTableDBContext>();
+        
     }
     async Task Given_The_Database_IsCreated(EFCoreProvider provider)
     {
@@ -24,7 +25,7 @@ public partial class TestSingleTable: FeatureFixture
             }
         }
         
-        context =await startDatabase.GetContext<SimpleTableDBContext>(provider);
+        var context =await startDatabase.GetContext<SimpleTableDBContext>(provider);
         ArgumentNullException.ThrowIfNull(context);
         StepExecution.Current.Comment("before created");
         try
@@ -42,11 +43,12 @@ public partial class TestSingleTable: FeatureFixture
     }
     async Task Then_Number_Of_Dep_Are_Nr(int nr)
     {
-        (await ctx().DepartmentCount(null)).Should().Be(nr);  
+        using var context = await ctx();
+        (await context.DepartmentCount(null)).Should().Be(nr);  
     }
     async Task When_Creating_Nr_Departments(int nr)
     {
-        var db = ctx();
+        var db = await ctx();
         var deps = Enumerable.Range(1, nr).Select(it =>
         {
             var dep = new Department();
@@ -58,13 +60,13 @@ public partial class TestSingleTable: FeatureFixture
     }
     async Task When_Deleting_Department_With_id(int id)
     {
-        var db = ctx();
+        var db = await ctx();
         await db.DepartmentDelete(id);
     }
 
     async Task When_Modify_Department_With_id_and_name(int id, string name)
     {
-        using var db = await startDatabase.GetNewContext<SimpleTableDBContext>();
+        using var db = await ctx();
         
         var dep=new Department();
         dep.IDDepartment= id;
@@ -73,7 +75,7 @@ public partial class TestSingleTable: FeatureFixture
     }
     async Task Then_For_id_has_name(int id, string name)
     {
-        using var db = await startDatabase.GetNewContext<SimpleTableDBContext>();
+        using var db = await ctx();
         var dep=await db.DepartmentGetSingle(id);
         dep.Should().NotBeNull();
         dep!.Name.Should().Be(name);

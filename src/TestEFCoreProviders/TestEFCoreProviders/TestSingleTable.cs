@@ -11,12 +11,12 @@ public partial class TestSingleTable:IScenarioTearDown
      
     [Scenario]
     //[MultiAssert]
-    //[InlineData(EFCoreProvider.Microsoft_EntityFrameworkCore_SqlServer)]
+    [InlineData(EFCoreProvider.Microsoft_EntityFrameworkCore_SqlServer)]
     [InlineData(EFCoreProvider.Microsoft_EntityFrameworkCore_In_Memory)]
-    //[InlineData(EFCoreProvider.Microsoft_EntityFrameworkCore_Sqlite_In_Memory)]
-    //[InlineData(EFCoreProvider.Npgsql_EntityFrameworkCore_PostgreSQL)]
-    //[InlineData(EFCoreProvider.Pomelo_EntityFrameworkCore_MySql)]
-    //[InlineData(EFCoreProvider.MySql_EntityFrameworkCore)]
+    [InlineData(EFCoreProvider.Microsoft_EntityFrameworkCore_Sqlite_File)]
+    [InlineData(EFCoreProvider.Npgsql_EntityFrameworkCore_PostgreSQL)] 
+    [InlineData(EFCoreProvider.Pomelo_EntityFrameworkCore_MySql)]
+    [InlineData(EFCoreProvider.MySql_EntityFrameworkCore)]
     //[InlineData(EFCoreProvider.Microsoft_EntityFrameworkCore_Cosmos)]
     public async Task CrudSimpleTable(EFCoreProvider provider)
     {

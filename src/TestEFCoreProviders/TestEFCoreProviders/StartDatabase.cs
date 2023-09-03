@@ -116,6 +116,11 @@ class StartDatabase: IAsyncDisposable
                 _connection.Open();
                 builder.UseSqlite(_connection);
                 break;
+            case EFCoreProvider.Microsoft_EntityFrameworkCore_Sqlite_File:
+                _connection = new SqliteConnection(con);
+                _connection.Open();
+                builder.UseSqlite(_connection);
+                break;
             case EFCoreProvider.Npgsql_EntityFrameworkCore_PostgreSQL:
                 builder.UseNpgsql(con);
                 break;
