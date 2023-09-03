@@ -6,9 +6,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Generated;
 
-public partial class ApplicationDBContext : DbContext
+public partial class SimpleTableDBContext : DbContext
 {
-    public ApplicationDBContext(DbContextOptions<ApplicationDBContext> options)
+    public SimpleTableDBContext(DbContextOptions<SimpleTableDBContext> options)
         : base(options)
     { 
     }
@@ -25,7 +25,7 @@ public partial class ApplicationDBContext : DbContext
 }
 
 //added new
-public partial class ApplicationDBContext : DbContext
+public partial class SimpleTableDBContext : DbContext
 {
     public static MetaDB  metaData = new("ApplicationDBContext");
     [System.Runtime.CompilerServices.ModuleInitializer]
@@ -176,8 +176,8 @@ public interface I_InsertDataApplicationDBContext{
 
 public class InsertDataApplicationDBContext: I_InsertDataApplicationDBContext{
 
-        private ApplicationDBContext _context;
-        public InsertDataApplicationDBContext(ApplicationDBContext context){
+        private SimpleTableDBContext _context;
+        public InsertDataApplicationDBContext(SimpleTableDBContext context){
             _context=context;
         }
         public async Task<Department_Table?> InsertDepartment(Department_Table value){
@@ -222,8 +222,8 @@ public class InsertDataApplicationDBContext: I_InsertDataApplicationDBContext{
         } //interface searchdata   
 
    public class SearchDataDepartment: ISearchDataDepartment{
-        private ApplicationDBContext context;
-        public SearchDataDepartment (ApplicationDBContext context) {
+        private SimpleTableDBContext context;
+        public SearchDataDepartment (SimpleTableDBContext context) {
             this.context=context;
         }
            

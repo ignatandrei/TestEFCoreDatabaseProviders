@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Generated;
 
-partial class ApplicationDBContext
+partial class SimpleTableDBContext
 {
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder)
     {

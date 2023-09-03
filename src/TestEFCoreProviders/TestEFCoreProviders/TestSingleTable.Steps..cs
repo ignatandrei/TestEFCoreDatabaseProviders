@@ -1,21 +1,25 @@
 
 using Microsoft.Data.Sqlite;
+using System.Linq;
 
 namespace TestEFCoreProviders;
 public partial class TestSingleTable: FeatureFixture
 {
-    ApplicationDBContext? context=null;
+    SimpleTableDBContext? context=null;
     private SqliteConnection? _connection;//necessary for sqlite
-    ApplicationDBContext ctx()
+    SimpleTableDBContext ctx()
     {
         ArgumentNullException.ThrowIfNull(context);
         return context ;
     }
     async Task Given_The_Database_IsCreated(EFCoreProvider provider)
     {
+        string tables = string.Join(",",SimpleTableDBContext.metaData.TableNames);
+        StepExecution.Current.Comment($"tables {tables}");
+        
         var con = await GetConnectionString(provider);
         StepExecution.Current.Comment($"connection string:{con}");
-        context = GetContext<ApplicationDBContext>(con, provider);
+        context = GetContext<SimpleTableDBContext>(con, provider);
         ArgumentNullException.ThrowIfNull(context);
         StepExecution.Current.Comment("before created");
         await context.Database.EnsureCreatedAsync();

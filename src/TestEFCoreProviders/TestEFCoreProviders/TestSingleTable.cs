@@ -67,7 +67,7 @@ public partial class TestSingleTable:IScenarioTearDown
     public T? GetContext<T>(string con, EFCoreProvider provider)
         where T : DbContext
     {
-        DbContextOptionsBuilder<ApplicationDBContext> builder = new();
+        DbContextOptionsBuilder<SimpleTableDBContext> builder = new();
         switch (provider)
         { 
             case EFCoreProvider.Microsoft_EntityFrameworkCore_SqlServer:
@@ -149,7 +149,7 @@ public partial class TestSingleTable:IScenarioTearDown
 
     }
 
-
+    [Fact(Skip = "interface")]
     public async Task OnScenarioTearDown()
     {
         TestOutput.WriteLine("tear down "+Container?.Name);
