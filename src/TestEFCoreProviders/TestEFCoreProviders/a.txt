@@ -1,0 +1,1589 @@
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  GenerateDataForTest.GeneratorFromDB -> C:\ignatandrei\TestEFCoreDatabaseProviders\src\GenerateDataForTest\GenerateDataForTest\GenerateDataForTest.GeneratorFromDB\bin\Debug\net7.0\GenerateDataForTest.GeneratorFromDB.dll
+  GenerateDataForTest.Models -> C:\ignatandrei\TestEFCoreDatabaseProviders\src\GenerateDataForTest\GenerateDataForTest\GenerateDataForTest.Models\bin\Debug\net7.0\GenerateDataForTest.Models.dll
+  GenerateDataForTest.Context -> C:\ignatandrei\TestEFCoreDatabaseProviders\src\GenerateDataForTest\GenerateDataForTest\GenerateDataForTest.Context\bin\Debug\net7.0\GenerateDataForTest.Context.dll
+  TestEFCoreProviders -> C:\ignatandrei\TestEFCoreDatabaseProviders\src\TestEFCoreProviders\TestEFCoreProviders\bin\Debug\net7.0\TestEFCoreProviders.dll
+Test run for C:\ignatandrei\TestEFCoreDatabaseProviders\src\TestEFCoreProviders\TestEFCoreProviders\bin\Debug\net7.0\TestEFCoreProviders.dll (.NETCoreApp,Version=v7.0)
+Microsoft (R) Test Execution Command Line Tool Version 17.7.0-preview-23364-03+bc17bb9693cfc4778ded51aa0ab7f1065433f989 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+Fi=000,Fa=000,Pe=000 #   > FEATURE: TestSimpleTablesMultipleData
+Fi=000,Fa=000,Pe=000 #   > FEATURE: TestSingleTable
+Fi=000,Fa=000,Pe=002 #  1> SCENARIO: CrudMultipleSimpleTable [provider: "Pomelo_EntityFrameworkCore_MySql"]
+Fi=000,Fa=000,Pe=002 #  2> SCENARIO: SearchSimpleTable [provider: "Microsoft_EntityFrameworkCore_Sqlite_File"]
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: GIVEN The Database IsCreated [provider: "Pomelo_EntityFrameworkCore_MySql"]...
+Fi=000,Fa=000,Pe=002 #  2>   STEP 1/13: GIVEN The Database IsCreated [provider: "Microsoft_EntityFrameworkCore_Sqlite_File"]...
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* tables Tbl_BIGINT,Tbl_BINARY,Tbl_BIT,Tbl_CHAR,Tbl_DATE,Tbl_DATETIME,Tbl_DATETIME2,Tbl_DATETIMEOFFSET,Tbl_DECIMAL,Tbl_FLOAT,Tbl_GEOGRAPHY,Tbl_GEOMETRY,Tbl_HIERARCHYID,Tbl_IMAGE,Tbl_INT,Tbl_JSON,Tbl_MONEY,Tbl_NCHAR,Tbl_NTEXT,Tbl_NVARCHAR,Tbl_REAL,Tbl_SMALLDATETIME,Tbl_SMALLINT,Tbl_TEXT,Tbl_TIME,Tbl_TINYINT,Tbl_UNIQUEIDENTIFIER,Tbl_VARBINARY,Tbl_VARCHAR,Tbl_XML */
+Fi=000,Fa=000,Pe=002 #  2>   STEP 1/13: /* tables Department */
+Fi=000,Fa=000,Pe=002 #  2>   STEP 1/13: /* table Department */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* table Tbl_BIGINT */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => int ID  */
+Fi=000,Fa=000,Pe=002 #  2>   STEP 1/13: /* column => long IDDepartment  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => long? DataColumn  */
+Fi=000,Fa=000,Pe=002 #  2>   STEP 1/13: /* column => string Name  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* table Tbl_BINARY */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => int ID  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => byte[] DataColumn  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* table Tbl_BIT */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => int ID  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => bool? DataColumn  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* table Tbl_CHAR */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => int ID  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => string DataColumn  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* table Tbl_DATE */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => int ID  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => DateTime? DataColumn  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* table Tbl_DATETIME */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => int ID  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => DateTime? DataColumn  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* table Tbl_DATETIME2 */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => int ID  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => DateTime? DataColumn  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* table Tbl_DATETIMEOFFSET */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => int ID  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => DateTimeOffset? DataColumn  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* table Tbl_DECIMAL */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => int ID  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => decimal? DataColumn  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* table Tbl_FLOAT */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => int ID  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => double? DataColumn  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* table Tbl_GEOGRAPHY */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => int ID  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* table Tbl_GEOMETRY */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => int ID  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* table Tbl_HIERARCHYID */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => int ID  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* table Tbl_IMAGE */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => int ID  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => byte[] DataColumn  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* table Tbl_INT */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => int ID  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => int? DataColumn  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* table Tbl_JSON */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => int ID  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => string DataColumn  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* table Tbl_MONEY */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => int ID  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => decimal? DataColumn  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* table Tbl_NCHAR */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => int ID  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => string DataColumn  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* table Tbl_NTEXT */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => int ID  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => string DataColumn  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* table Tbl_NVARCHAR */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => int ID  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => string DataColumn  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* table Tbl_REAL */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => int ID  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => float? DataColumn  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* table Tbl_SMALLDATETIME */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => int ID  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => DateTime? DataColumn  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* table Tbl_SMALLINT */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => int ID  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => short? DataColumn  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* table Tbl_TEXT */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => int ID  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => string DataColumn  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* table Tbl_TIME */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => int ID  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => TimeSpan? DataColumn  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* table Tbl_TINYINT */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => int ID  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => byte? DataColumn  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* table Tbl_UNIQUEIDENTIFIER */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => int ID  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => Guid? DataColumn  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* table Tbl_VARBINARY */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => int ID  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => byte[] DataColumn  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* table Tbl_VARCHAR */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => int ID  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => string DataColumn  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* table Tbl_XML */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => int ID  */
+Fi=000,Fa=000,Pe=002 #  1>   STEP 1/1: /* column => string DataColumn  */
+Fi=000,Fa=000,Pe=002 #  2>   STEP 1/13: /* connection : Data Source=testc6f061af1dbd40f88db848b81b6bd7dd.db */
+[testcontainers.org 00:00:00.06] Connected to Docker:
+  Host: npipe://./pipe/docker_engine
+  Server Version: 24.0.5
+  Kernel Version: 5.15.90.1-microsoft-standard-WSL2
+  API Version: 1.43
+  Operating System: Docker Desktop
+  Total Memory: 15.56 GB
+Fi=000,Fa=000,Pe=002 #  2>   STEP 1/13: /* before created */
+[testcontainers.org 00:00:00.24] Docker container f572cc817eb0 created
+[testcontainers.org 00:00:00.35] Start Docker container f572cc817eb0
+Fi=000,Fa=000,Pe=002 #  2>   STEP 1/13: /* after created */
+Fi=000,Fa=000,Pe=002 #  2>   STEP 1/13: GIVEN The Database IsCreated [provider: "Microsoft_EntityFrameworkCore_Sqlite_File"] (Passed after 755ms)
+Fi=000,Fa=000,Pe=002 #  2>   STEP 2/13: WHEN Creating Nr "22" Departments...
+Fi=000,Fa=000,Pe=002 #  2>   STEP 2/13: WHEN Creating Nr "22" Departments (Passed after 157ms)
+Fi=000,Fa=000,Pe=002 #  2>   STEP 3/13: AND Search For id1 "21" and id2 "20" is success...
+Fi=000,Fa=000,Pe=002 #  2>   STEP 3/13: AND Search For id1 "21" and id2 "20" is success (Passed after 352ms)
+Fi=000,Fa=000,Pe=002 #  2>   STEP 4/13: AND Search For Id That Is Criteria "Different" Than nr "1" the results number are "21"...
+Fi=000,Fa=000,Pe=002 #  2>   STEP 4/13: AND Search For Id That Is Criteria "Different" Than nr "1" the results number are "21" (Passed after 17ms)
+Fi=000,Fa=000,Pe=002 #  2>   STEP 5/13: AND Search For Id That Is Criteria "Different" Than nr "122" the results number are "22"...
+Fi=000,Fa=000,Pe=002 #  2>   STEP 5/13: AND Search For Id That Is Criteria "Different" Than nr "122" the results number are "22" (Passed after 4ms)
+Fi=000,Fa=000,Pe=002 #  2>   STEP 6/13: AND Search For Id That Is Criteria "GreaterOrEqual" Than nr "1" the results number are "22"...
+Fi=000,Fa=000,Pe=002 #  2>   STEP 6/13: AND Search For Id That Is Criteria "GreaterOrEqual" Than nr "1" the results number are "22" (Passed after 7ms)
+Fi=000,Fa=000,Pe=002 #  2>   STEP 7/13: AND Search For Id That Is Criteria "Greater" Than nr "1" the results number are "21"...
+Fi=000,Fa=000,Pe=002 #  2>   STEP 7/13: AND Search For Id That Is Criteria "Greater" Than nr "1" the results number are "21" (Passed after 4ms)
+Fi=000,Fa=000,Pe=002 #  2>   STEP 8/13: AND Search For Id That Is Criteria "Less" Than nr "1" the results number are "0"...
+Fi=000,Fa=000,Pe=002 #  2>   STEP 8/13: AND Search For Id That Is Criteria "Less" Than nr "1" the results number are "0" (Passed after 2ms)
+Fi=000,Fa=000,Pe=002 #  2>   STEP 9/13: AND Search For Id That Is Criteria "LessOrEqual" Than nr "1" the results number are "1"...
+Fi=000,Fa=000,Pe=002 #  2>   STEP 9/13: AND Search For Id That Is Criteria "LessOrEqual" Than nr "1" the results number are "1" (Passed after 2ms)
+Fi=000,Fa=000,Pe=002 #  2>   STEP 10/13: AND Search For Name That Is Criteria "StartsWith" For searchString "An" the results number are "22"...
+Fi=000,Fa=000,Pe=002 #  2>   STEP 10/13: AND Search For Name That Is Criteria "StartsWith" For searchString "An" the results number are "22" (Passed after 13ms)
+Fi=000,Fa=000,Pe=002 #  2>   STEP 11/13: AND Search For Name That Is Criteria "StartsWith" For searchString "XAn" the results number are "0"...
+Fi=000,Fa=000,Pe=002 #  2>   STEP 11/13: AND Search For Name That Is Criteria "StartsWith" For searchString "XAn" the results number are "0" (Passed after 3ms)
+Fi=000,Fa=000,Pe=002 #  2>   STEP 12/13: AND Search For Name That Is Criteria "StartsWith" For searchString "Andrei 1" the results number are "11"...
+Fi=000,Fa=000,Pe=002 #  2>   STEP 12/13: AND Search For Name That Is Criteria "StartsWith" For searchString "Andrei 1" the results number are "11" (Passed after 12ms)
+Fi=000,Fa=000,Pe=002 #  2>   STEP 13/13: AND Search For Name That Is Criteria "EndsWith" For searchString "11" the results number are "1"...
+Fi=000,Fa=000,Pe=002 #  2>   STEP 13/13: AND Search For Name That Is Criteria "EndsWith" For searchString "11" the results number are "1" (Passed after 3ms)
+Fi=001,Fa=000,Pe=001 #  2>   SCENARIO RESULT: Passed after 1s 371ms
+Fi=001,Fa=000,Pe=002 #  3> SCENARIO: SearchSimpleTable [provider: "MySql_EntityFrameworkCore"]
+Fi=001,Fa=000,Pe=002 #  3>   STEP 1/13: GIVEN The Database IsCreated [provider: "MySql_EntityFrameworkCore"]...
+Fi=001,Fa=000,Pe=002 #  3>   STEP 1/13: /* tables Department */
+Fi=001,Fa=000,Pe=002 #  3>   STEP 1/13: /* table Department */
+Fi=001,Fa=000,Pe=002 #  3>   STEP 1/13: /* column => long IDDepartment  */
+Fi=001,Fa=000,Pe=002 #  3>   STEP 1/13: /* column => string Name  */
+[testcontainers.org 00:00:01.91] Wait for Docker container f572cc817eb0 to complete readiness checks
+[testcontainers.org 00:00:01.91] Docker container f572cc817eb0 ready
+[testcontainers.org 00:00:02.07] Docker container ea017b9b09c6 created
+[testcontainers.org 00:00:02.08] Docker container b322c7b18713 created
+[testcontainers.org 00:00:02.11] Start Docker container ea017b9b09c6
+[testcontainers.org 00:00:02.11] Start Docker container b322c7b18713
+Fi=001,Fa=000,Pe=002 #  1>   STEP 1/1: GIVEN The Database IsCreated [provider: "Pomelo_EntityFrameworkCore_MySql"] (Failed after 2s 660ms)
+Fi=002,Fa=001,Pe=001 #  1>   SCENARIO RESULT: Failed after 2s 686ms
+                               Step 1: Docker.DotNet.DockerApiException : Docker API responded with status code=InternalServerError, response={"message":"driver failed programming external connectivity on endpoint zealous_gould (2b544b109e714e899a11461503d160c247f9d8c5950e21670dac92d45e480acf): Bind for 0.0.0.0:3306 failed: port is already allocated"}
+
+                               	at Docker.DotNet.DockerClient.HandleIfErrorResponseAsync(HttpStatusCode statusCode, HttpResponseMessage response, IEnumerable`1 handlers)
+                               	at Docker.DotNet.DockerClient.MakeRequestAsync(IEnumerable`1 errorHandlers, HttpMethod method, String path, IQueryString queryString, IRequestContent body, IDictionary`2 headers, TimeSpan timeout, CancellationToken token)
+                               	at Docker.DotNet.ContainerOperations.StartContainerAsync(String id, ContainerStartParameters parameters, CancellationToken cancellationToken)
+                               	at DotNet.Testcontainers.Clients.TestcontainersClient.StartAsync(String id, CancellationToken ct)
+                               	at DotNet.Testcontainers.Containers.DockerContainer.UnsafeStartAsync(CancellationToken ct)
+                               	at DotNet.Testcontainers.Containers.DockerContainer.StartAsync(CancellationToken ct)
+                               	at TestEFCoreProviders.StartDatabase.GetConnectionString(EFCoreProvider provider) in C:\ignatandrei\TestEFCoreDatabaseProviders\src\TestEFCoreProviders\TestEFCoreProviders\StartDatabase.cs:line 65
+                               	at TestEFCoreProviders.StartDatabase.GetContext[T](EFCoreProvider provider) in C:\ignatandrei\TestEFCoreDatabaseProviders\src\TestEFCoreProviders\TestEFCoreProviders\StartDatabase.cs:line 175
+Fi=002,Fa=001,Pe=002 #  4> SCENARIO: CrudMultipleSimpleTable [provider: "Microsoft_EntityFrameworkCore_Sqlite_File"]
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: GIVEN The Database IsCreated [provider: "Microsoft_EntityFrameworkCore_Sqlite_File"]...
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* tables Tbl_BIGINT,Tbl_BINARY,Tbl_BIT,Tbl_CHAR,Tbl_DATE,Tbl_DATETIME,Tbl_DATETIME2,Tbl_DATETIMEOFFSET,Tbl_DECIMAL,Tbl_FLOAT,Tbl_GEOGRAPHY,Tbl_GEOMETRY,Tbl_HIERARCHYID,Tbl_IMAGE,Tbl_INT,Tbl_JSON,Tbl_MONEY,Tbl_NCHAR,Tbl_NTEXT,Tbl_NVARCHAR,Tbl_REAL,Tbl_SMALLDATETIME,Tbl_SMALLINT,Tbl_TEXT,Tbl_TIME,Tbl_TINYINT,Tbl_UNIQUEIDENTIFIER,Tbl_VARBINARY,Tbl_VARCHAR,Tbl_XML */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* table Tbl_BIGINT */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => int ID  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => long? DataColumn  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* table Tbl_BINARY */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => int ID  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => byte[] DataColumn  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* table Tbl_BIT */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => int ID  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => bool? DataColumn  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* table Tbl_CHAR */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => int ID  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => string DataColumn  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* table Tbl_DATE */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => int ID  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => DateTime? DataColumn  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* table Tbl_DATETIME */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => int ID  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => DateTime? DataColumn  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* table Tbl_DATETIME2 */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => int ID  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => DateTime? DataColumn  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* table Tbl_DATETIMEOFFSET */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => int ID  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => DateTimeOffset? DataColumn  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* table Tbl_DECIMAL */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => int ID  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => decimal? DataColumn  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* table Tbl_FLOAT */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => int ID  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => double? DataColumn  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* table Tbl_GEOGRAPHY */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => int ID  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* table Tbl_GEOMETRY */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => int ID  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* table Tbl_HIERARCHYID */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => int ID  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* table Tbl_IMAGE */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => int ID  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => byte[] DataColumn  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* table Tbl_INT */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => int ID  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => int? DataColumn  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* table Tbl_JSON */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => int ID  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => string DataColumn  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* table Tbl_MONEY */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => int ID  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => decimal? DataColumn  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* table Tbl_NCHAR */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => int ID  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => string DataColumn  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* table Tbl_NTEXT */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => int ID  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => string DataColumn  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* table Tbl_NVARCHAR */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => int ID  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => string DataColumn  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* table Tbl_REAL */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => int ID  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => float? DataColumn  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* table Tbl_SMALLDATETIME */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => int ID  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => DateTime? DataColumn  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* table Tbl_SMALLINT */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => int ID  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => short? DataColumn  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* table Tbl_TEXT */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => int ID  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => string DataColumn  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* table Tbl_TIME */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => int ID  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => TimeSpan? DataColumn  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* table Tbl_TINYINT */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => int ID  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => byte? DataColumn  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* table Tbl_UNIQUEIDENTIFIER */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => int ID  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => Guid? DataColumn  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* table Tbl_VARBINARY */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => int ID  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => byte[] DataColumn  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* table Tbl_VARCHAR */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => int ID  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => string DataColumn  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* table Tbl_XML */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => int ID  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* column => string DataColumn  */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* connection : Data Source=test7072267614cf41e7825cc823af58eb71.db */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* before created */
+  Failed TestEFCoreProviders.TestSimpleTablesMultipleData.CrudMultipleSimpleTable(provider: Pomelo_EntityFrameworkCore_MySql) [2 s]
+  Error Message:
+   Docker.DotNet.DockerApiException : Docker API responded with status code=InternalServerError, response={"message":"driver failed programming external connectivity on endpoint zealous_gould (2b544b109e714e899a11461503d160c247f9d8c5950e21670dac92d45e480acf): Bind for 0.0.0.0:3306 failed: port is already allocated"}
+
+  Stack Trace:
+     at Docker.DotNet.DockerClient.HandleIfErrorResponseAsync(HttpStatusCode statusCode, HttpResponseMessage response, IEnumerable`1 handlers)
+   at Docker.DotNet.DockerClient.MakeRequestAsync(IEnumerable`1 errorHandlers, HttpMethod method, String path, IQueryString queryString, IRequestContent body, IDictionary`2 headers, TimeSpan timeout, CancellationToken token)
+   at Docker.DotNet.ContainerOperations.StartContainerAsync(String id, ContainerStartParameters parameters, CancellationToken cancellationToken)
+   at DotNet.Testcontainers.Clients.TestcontainersClient.StartAsync(String id, CancellationToken ct)
+   at DotNet.Testcontainers.Containers.DockerContainer.UnsafeStartAsync(CancellationToken ct)
+   at DotNet.Testcontainers.Containers.DockerContainer.StartAsync(CancellationToken ct)
+   at TestEFCoreProviders.StartDatabase.GetConnectionString(EFCoreProvider provider) in C:\ignatandrei\TestEFCoreDatabaseProviders\src\TestEFCoreProviders\TestEFCoreProviders\StartDatabase.cs:line 65
+   at TestEFCoreProviders.StartDatabase.GetContext[T](EFCoreProvider provider) in C:\ignatandrei\TestEFCoreDatabaseProviders\src\TestEFCoreProviders\TestEFCoreProviders\StartDatabase.cs:line 175
+   at TestEFCoreProviders.TestSimpleTablesMultipleData.Given_The_Database_IsCreated(EFCoreProvider provider) in C:\ignatandrei\TestEFCoreDatabaseProviders\src\TestEFCoreProviders\TestEFCoreProviders\TestSimpleTablesMultipleData.Steps.cs:line 18
+   at LightBDD.Framework.Implementation.IntegratedScenarioBuilder`1.RunAsync()
+   at TestEFCoreProviders.TestSimpleTablesMultipleData.CrudMultipleSimpleTable(EFCoreProvider provider) in C:\ignatandrei\TestEFCoreDatabaseProviders\src\TestEFCoreProviders\TestEFCoreProviders\TestSimpleTablesMultipleData.cs:line 24
+--- End of stack trace from previous location ---
+  Standard Output Messages:
+ SCENARIO: CrudMultipleSimpleTable [provider: "Pomelo_EntityFrameworkCore_MySql"]
+   STEP 1/1: GIVEN The Database IsCreated [provider: "Pomelo_EntityFrameworkCore_MySql"]...
+   STEP 1/1: /* tables Tbl_BIGINT,Tbl_BINARY,Tbl_BIT,Tbl_CHAR,Tbl_DATE,Tbl_DATETIME,Tbl_DATETIME2,Tbl_DATETIMEOFFSET,Tbl_DECIMAL,Tbl_FLOAT,Tbl_GEOGRAPHY,Tbl_GEOMETRY,Tbl_HIERARCHYID,Tbl_IMAGE,Tbl_INT,Tbl_JSON,Tbl_MONEY,Tbl_NCHAR,Tbl_NTEXT,Tbl_NVARCHAR,Tbl_REAL,Tbl_SMALLDATETIME,Tbl_SMALLINT,Tbl_TEXT,Tbl_TIME,Tbl_TINYINT,Tbl_UNIQUEIDENTIFIER,Tbl_VARBINARY,Tbl_VARCHAR,Tbl_XML */
+   STEP 1/1: /* table Tbl_BIGINT */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => long? DataColumn  */
+   STEP 1/1: /* table Tbl_BINARY */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => byte[] DataColumn  */
+   STEP 1/1: /* table Tbl_BIT */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => bool? DataColumn  */
+   STEP 1/1: /* table Tbl_CHAR */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => string DataColumn  */
+   STEP 1/1: /* table Tbl_DATE */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => DateTime? DataColumn  */
+   STEP 1/1: /* table Tbl_DATETIME */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => DateTime? DataColumn  */
+   STEP 1/1: /* table Tbl_DATETIME2 */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => DateTime? DataColumn  */
+   STEP 1/1: /* table Tbl_DATETIMEOFFSET */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => DateTimeOffset? DataColumn  */
+   STEP 1/1: /* table Tbl_DECIMAL */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => decimal? DataColumn  */
+   STEP 1/1: /* table Tbl_FLOAT */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => double? DataColumn  */
+   STEP 1/1: /* table Tbl_GEOGRAPHY */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* table Tbl_GEOMETRY */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* table Tbl_HIERARCHYID */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* table Tbl_IMAGE */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => byte[] DataColumn  */
+   STEP 1/1: /* table Tbl_INT */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => int? DataColumn  */
+   STEP 1/1: /* table Tbl_JSON */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => string DataColumn  */
+   STEP 1/1: /* table Tbl_MONEY */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => decimal? DataColumn  */
+   STEP 1/1: /* table Tbl_NCHAR */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => string DataColumn  */
+   STEP 1/1: /* table Tbl_NTEXT */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => string DataColumn  */
+   STEP 1/1: /* table Tbl_NVARCHAR */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => string DataColumn  */
+   STEP 1/1: /* table Tbl_REAL */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => float? DataColumn  */
+   STEP 1/1: /* table Tbl_SMALLDATETIME */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => DateTime? DataColumn  */
+   STEP 1/1: /* table Tbl_SMALLINT */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => short? DataColumn  */
+   STEP 1/1: /* table Tbl_TEXT */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => string DataColumn  */
+   STEP 1/1: /* table Tbl_TIME */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => TimeSpan? DataColumn  */
+   STEP 1/1: /* table Tbl_TINYINT */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => byte? DataColumn  */
+   STEP 1/1: /* table Tbl_UNIQUEIDENTIFIER */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => Guid? DataColumn  */
+   STEP 1/1: /* table Tbl_VARBINARY */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => byte[] DataColumn  */
+   STEP 1/1: /* table Tbl_VARCHAR */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => string DataColumn  */
+   STEP 1/1: /* table Tbl_XML */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => string DataColumn  */
+   STEP 1/1: GIVEN The Database IsCreated [provider: "Pomelo_EntityFrameworkCore_MySql"] (Failed after 2s 660ms)
+ tear down 
+
+
+[testcontainers.org 00:00:02.93] Wait for Docker container b322c7b18713 to complete readiness checks
+[testcontainers.org 00:00:03.01] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container b322c7b18713
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: /* after created */
+Fi=002,Fa=001,Pe=002 #  4>   STEP 1/1: GIVEN The Database IsCreated [provider: "Microsoft_EntityFrameworkCore_Sqlite_File"] (Passed after 892ms)
+Fi=003,Fa=001,Pe=001 #  4>   SCENARIO RESULT: Passed after 894ms
+Fi=003,Fa=001,Pe=002 #  5> SCENARIO: CrudMultipleSimpleTable [provider: "Npgsql_EntityFrameworkCore_PostgreSQL"]
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: GIVEN The Database IsCreated [provider: "Npgsql_EntityFrameworkCore_PostgreSQL"]...
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* tables Tbl_BIGINT,Tbl_BINARY,Tbl_BIT,Tbl_CHAR,Tbl_DATE,Tbl_DATETIME,Tbl_DATETIME2,Tbl_DATETIMEOFFSET,Tbl_DECIMAL,Tbl_FLOAT,Tbl_GEOGRAPHY,Tbl_GEOMETRY,Tbl_HIERARCHYID,Tbl_IMAGE,Tbl_INT,Tbl_JSON,Tbl_MONEY,Tbl_NCHAR,Tbl_NTEXT,Tbl_NVARCHAR,Tbl_REAL,Tbl_SMALLDATETIME,Tbl_SMALLINT,Tbl_TEXT,Tbl_TIME,Tbl_TINYINT,Tbl_UNIQUEIDENTIFIER,Tbl_VARBINARY,Tbl_VARCHAR,Tbl_XML */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* table Tbl_BIGINT */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => int ID  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => long? DataColumn  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* table Tbl_BINARY */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => int ID  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => byte[] DataColumn  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* table Tbl_BIT */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => int ID  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => bool? DataColumn  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* table Tbl_CHAR */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => int ID  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => string DataColumn  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* table Tbl_DATE */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => int ID  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => DateTime? DataColumn  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* table Tbl_DATETIME */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => int ID  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => DateTime? DataColumn  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* table Tbl_DATETIME2 */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => int ID  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => DateTime? DataColumn  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* table Tbl_DATETIMEOFFSET */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => int ID  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => DateTimeOffset? DataColumn  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* table Tbl_DECIMAL */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => int ID  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => decimal? DataColumn  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* table Tbl_FLOAT */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => int ID  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => double? DataColumn  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* table Tbl_GEOGRAPHY */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => int ID  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* table Tbl_GEOMETRY */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => int ID  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* table Tbl_HIERARCHYID */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => int ID  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* table Tbl_IMAGE */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => int ID  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => byte[] DataColumn  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* table Tbl_INT */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => int ID  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => int? DataColumn  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* table Tbl_JSON */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => int ID  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => string DataColumn  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* table Tbl_MONEY */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => int ID  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => decimal? DataColumn  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* table Tbl_NCHAR */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => int ID  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => string DataColumn  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* table Tbl_NTEXT */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => int ID  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => string DataColumn  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* table Tbl_NVARCHAR */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => int ID  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => string DataColumn  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* table Tbl_REAL */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => int ID  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => float? DataColumn  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* table Tbl_SMALLDATETIME */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => int ID  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => DateTime? DataColumn  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* table Tbl_SMALLINT */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => int ID  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => short? DataColumn  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* table Tbl_TEXT */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => int ID  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => string DataColumn  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* table Tbl_TIME */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => int ID  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => TimeSpan? DataColumn  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* table Tbl_TINYINT */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => int ID  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => byte? DataColumn  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* table Tbl_UNIQUEIDENTIFIER */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => int ID  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => Guid? DataColumn  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* table Tbl_VARBINARY */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => int ID  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => byte[] DataColumn  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* table Tbl_VARCHAR */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => int ID  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => string DataColumn  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* table Tbl_XML */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => int ID  */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* column => string DataColumn  */
+[testcontainers.org 00:00:03.68] Docker container 5827fc5fa903 created
+[testcontainers.org 00:00:03.71] Start Docker container 5827fc5fa903
+[testcontainers.org 00:00:04.52] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container b322c7b18713
+[testcontainers.org 00:00:05.74] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container b322c7b18713
+[testcontainers.org 00:00:05.85] Wait for Docker container 5827fc5fa903 to complete readiness checks
+[testcontainers.org 00:00:06.91] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container b322c7b18713
+[testcontainers.org 00:00:08.04] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container b322c7b18713
+[testcontainers.org 00:00:08.98] Docker container 5827fc5fa903 ready
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* connection : Host=127.0.0.1;Port=48910;Database=test206eab629df245a8877c4c18de4832d4;Username=postgres;Password=postgres;Persist Security Info=True */
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: /* before created */
+[testcontainers.org 00:00:09.14] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container b322c7b18713
+Fi=003,Fa=001,Pe=002 #  5>   STEP 1/1: GIVEN The Database IsCreated [provider: "Npgsql_EntityFrameworkCore_PostgreSQL"] (Failed after 6s 227ms)
+[testcontainers.org 00:00:09.72] Stop Docker container 5827fc5fa903
+[testcontainers.org 00:00:10.29] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container b322c7b18713
+[testcontainers.org 00:00:10.48] Delete Docker container 5827fc5fa903
+[testcontainers.org 00:00:11.42] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container b322c7b18713
+[testcontainers.org 00:00:12.50] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container b322c7b18713
+[testcontainers.org 00:00:13.62] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container b322c7b18713
+[testcontainers.org 00:00:14.77] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container b322c7b18713
+[testcontainers.org 00:00:15.86] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container b322c7b18713
+[testcontainers.org 00:00:16.99] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container b322c7b18713
+[testcontainers.org 00:00:18.10] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container b322c7b18713
+[testcontainers.org 00:00:19.23] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container b322c7b18713
+[testcontainers.org 00:00:20.33] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container b322c7b18713
+[testcontainers.org 00:00:21.44] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container b322c7b18713
+[testcontainers.org 00:00:22.54] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container b322c7b18713
+[testcontainers.org 00:00:23.67] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container b322c7b18713
+[testcontainers.org 00:00:24.78] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container b322c7b18713
+[testcontainers.org 00:00:24.91] Docker container b322c7b18713 ready
+Fi=003,Fa=001,Pe=002 #  3>   STEP 1/13: /* connection : server=127.0.0.1;port=3306;database=test9002f6099f6747cf91d7baf341d2c7b1;user id=root;password=mysql;persistsecurityinfo=True */
+Fi=003,Fa=001,Pe=002 #  3>   STEP 1/13: /* before created */
+Fi=003,Fa=001,Pe=002 #  3>   STEP 1/13: /* after created */
+Fi=003,Fa=001,Pe=002 #  3>   STEP 1/13: GIVEN The Database IsCreated [provider: "MySql_EntityFrameworkCore"] (Passed after 23s 998ms)
+Fi=003,Fa=001,Pe=002 #  3>   STEP 2/13: WHEN Creating Nr "22" Departments...
+Fi=003,Fa=001,Pe=002 #  3>   STEP 2/13: WHEN Creating Nr "22" Departments (Passed after 48ms)
+Fi=003,Fa=001,Pe=002 #  3>   STEP 3/13: AND Search For id1 "21" and id2 "20" is success...
+Fi=003,Fa=001,Pe=002 #  3>   STEP 3/13: AND Search For id1 "21" and id2 "20" is success (Passed after 51ms)
+Fi=003,Fa=001,Pe=002 #  3>   STEP 4/13: AND Search For Id That Is Criteria "Different" Than nr "1" the results number are "21"...
+Fi=003,Fa=001,Pe=002 #  3>   STEP 4/13: AND Search For Id That Is Criteria "Different" Than nr "1" the results number are "21" (Passed after 7ms)
+Fi=003,Fa=001,Pe=002 #  3>   STEP 5/13: AND Search For Id That Is Criteria "Different" Than nr "122" the results number are "22"...
+Fi=003,Fa=001,Pe=002 #  3>   STEP 5/13: AND Search For Id That Is Criteria "Different" Than nr "122" the results number are "22" (Passed after 3ms)
+Fi=003,Fa=001,Pe=002 #  3>   STEP 6/13: AND Search For Id That Is Criteria "GreaterOrEqual" Than nr "1" the results number are "22"...
+Fi=003,Fa=001,Pe=002 #  3>   STEP 6/13: AND Search For Id That Is Criteria "GreaterOrEqual" Than nr "1" the results number are "22" (Passed after 5ms)
+Fi=003,Fa=001,Pe=002 #  3>   STEP 7/13: AND Search For Id That Is Criteria "Greater" Than nr "1" the results number are "21"...
+Fi=003,Fa=001,Pe=002 #  3>   STEP 7/13: AND Search For Id That Is Criteria "Greater" Than nr "1" the results number are "21" (Passed after 5ms)
+Fi=003,Fa=001,Pe=002 #  3>   STEP 8/13: AND Search For Id That Is Criteria "Less" Than nr "1" the results number are "0"...
+Fi=003,Fa=001,Pe=002 #  3>   STEP 8/13: AND Search For Id That Is Criteria "Less" Than nr "1" the results number are "0" (Passed after 4ms)
+Fi=003,Fa=001,Pe=002 #  3>   STEP 9/13: AND Search For Id That Is Criteria "LessOrEqual" Than nr "1" the results number are "1"...
+Fi=003,Fa=001,Pe=002 #  3>   STEP 9/13: AND Search For Id That Is Criteria "LessOrEqual" Than nr "1" the results number are "1" (Passed after 4ms)
+Fi=003,Fa=001,Pe=002 #  3>   STEP 10/13: AND Search For Name That Is Criteria "StartsWith" For searchString "An" the results number are "22"...
+Fi=003,Fa=001,Pe=002 #  3>   STEP 10/13: AND Search For Name That Is Criteria "StartsWith" For searchString "An" the results number are "22" (Passed after 7ms)
+Fi=003,Fa=001,Pe=002 #  3>   STEP 11/13: AND Search For Name That Is Criteria "StartsWith" For searchString "XAn" the results number are "0"...
+Fi=003,Fa=001,Pe=002 #  3>   STEP 11/13: AND Search For Name That Is Criteria "StartsWith" For searchString "XAn" the results number are "0" (Passed after 3ms)
+Fi=003,Fa=001,Pe=002 #  3>   STEP 12/13: AND Search For Name That Is Criteria "StartsWith" For searchString "Andrei 1" the results number are "11"...
+Fi=003,Fa=001,Pe=002 #  3>   STEP 12/13: AND Search For Name That Is Criteria "StartsWith" For searchString "Andrei 1" the results number are "11" (Passed after 3ms)
+Fi=003,Fa=001,Pe=002 #  3>   STEP 13/13: AND Search For Name That Is Criteria "EndsWith" For searchString "11" the results number are "1"...
+Fi=003,Fa=001,Pe=002 #  3>   STEP 13/13: AND Search For Name That Is Criteria "EndsWith" For searchString "11" the results number are "1" (Passed after 5ms)
+[testcontainers.org 00:00:25.41] Stop Docker container b322c7b18713
+[testcontainers.org 00:00:28.77] Delete Docker container b322c7b18713
+Fi=004,Fa=002,Pe=001 #  5>   SCENARIO RESULT: Failed after 37s 141ms
+                               Step 1: Npgsql.PostgresException : 42704: type "datetime" does not exist
+                               	
+                               	POSITION: 101
+                               	at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|234_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+                               	at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+                               	at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+                               	at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+                               	at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+                               	at Npgsql.NpgsqlCommand.ExecuteNonQuery(Boolean async, CancellationToken cancellationToken)
+                               	at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+                               	at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+Fi=004,Fa=002,Pe=002 #  6> SCENARIO: CrudMultipleSimpleTable [provider: "MySql_EntityFrameworkCore"]
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: GIVEN The Database IsCreated [provider: "MySql_EntityFrameworkCore"]...
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* tables Tbl_BIGINT,Tbl_BINARY,Tbl_BIT,Tbl_CHAR,Tbl_DATE,Tbl_DATETIME,Tbl_DATETIME2,Tbl_DATETIMEOFFSET,Tbl_DECIMAL,Tbl_FLOAT,Tbl_GEOGRAPHY,Tbl_GEOMETRY,Tbl_HIERARCHYID,Tbl_IMAGE,Tbl_INT,Tbl_JSON,Tbl_MONEY,Tbl_NCHAR,Tbl_NTEXT,Tbl_NVARCHAR,Tbl_REAL,Tbl_SMALLDATETIME,Tbl_SMALLINT,Tbl_TEXT,Tbl_TIME,Tbl_TINYINT,Tbl_UNIQUEIDENTIFIER,Tbl_VARBINARY,Tbl_VARCHAR,Tbl_XML */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* table Tbl_BIGINT */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => int ID  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => long? DataColumn  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* table Tbl_BINARY */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => int ID  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => byte[] DataColumn  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* table Tbl_BIT */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => int ID  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => bool? DataColumn  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* table Tbl_CHAR */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => int ID  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => string DataColumn  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* table Tbl_DATE */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => int ID  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => DateTime? DataColumn  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* table Tbl_DATETIME */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => int ID  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => DateTime? DataColumn  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* table Tbl_DATETIME2 */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => int ID  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => DateTime? DataColumn  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* table Tbl_DATETIMEOFFSET */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => int ID  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => DateTimeOffset? DataColumn  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* table Tbl_DECIMAL */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => int ID  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => decimal? DataColumn  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* table Tbl_FLOAT */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => int ID  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => double? DataColumn  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* table Tbl_GEOGRAPHY */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => int ID  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* table Tbl_GEOMETRY */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => int ID  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* table Tbl_HIERARCHYID */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => int ID  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* table Tbl_IMAGE */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => int ID  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => byte[] DataColumn  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* table Tbl_INT */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => int ID  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => int? DataColumn  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* table Tbl_JSON */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => int ID  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => string DataColumn  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* table Tbl_MONEY */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => int ID  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => decimal? DataColumn  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* table Tbl_NCHAR */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => int ID  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => string DataColumn  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* table Tbl_NTEXT */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => int ID  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => string DataColumn  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* table Tbl_NVARCHAR */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => int ID  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => string DataColumn  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* table Tbl_REAL */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => int ID  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => float? DataColumn  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* table Tbl_SMALLDATETIME */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => int ID  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => DateTime? DataColumn  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* table Tbl_SMALLINT */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => int ID  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => short? DataColumn  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* table Tbl_TEXT */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => int ID  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => string DataColumn  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* table Tbl_TIME */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => int ID  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => TimeSpan? DataColumn  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* table Tbl_TINYINT */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => int ID  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => byte? DataColumn  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* table Tbl_UNIQUEIDENTIFIER */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => int ID  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => Guid? DataColumn  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* table Tbl_VARBINARY */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => int ID  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => byte[] DataColumn  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* table Tbl_VARCHAR */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => int ID  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => string DataColumn  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* table Tbl_XML */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => int ID  */
+Fi=004,Fa=002,Pe=002 #  6>   STEP 1/1: /* column => string DataColumn  */
+  Failed TestEFCoreProviders.TestSimpleTablesMultipleData.CrudMultipleSimpleTable(provider: Npgsql_EntityFrameworkCore_PostgreSQL) [37 s]
+  Error Message:
+   Npgsql.PostgresException : 42704: type "datetime" does not exist
+
+POSITION: 101
+  Stack Trace:
+     at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|234_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationCommandExecutor.ExecuteNonQueryAsync(IEnumerable`1 migrationCommands, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationCommandExecutor.ExecuteNonQueryAsync(IEnumerable`1 migrationCommands, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationCommandExecutor.ExecuteNonQueryAsync(IEnumerable`1 migrationCommands, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationCommandExecutor.ExecuteNonQueryAsync(IEnumerable`1 migrationCommands, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator.CreateTablesAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreator.EnsureCreatedAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreator.EnsureCreatedAsync(CancellationToken cancellationToken)
+   at TestEFCoreProviders.TestSimpleTablesMultipleData.Given_The_Database_IsCreated(EFCoreProvider provider) in C:\ignatandrei\TestEFCoreDatabaseProviders\src\TestEFCoreProviders\TestEFCoreProviders\TestSimpleTablesMultipleData.Steps.cs:line 23
+   at LightBDD.Framework.Implementation.IntegratedScenarioBuilder`1.RunAsync()
+   at TestEFCoreProviders.TestSimpleTablesMultipleData.CrudMultipleSimpleTable(EFCoreProvider provider) in C:\ignatandrei\TestEFCoreDatabaseProviders\src\TestEFCoreProviders\TestEFCoreProviders\TestSimpleTablesMultipleData.cs:line 24
+--- End of stack trace from previous location ---
+  Standard Output Messages:
+ SCENARIO: CrudMultipleSimpleTable [provider: "Npgsql_EntityFrameworkCore_PostgreSQL"]
+   STEP 1/1: GIVEN The Database IsCreated [provider: "Npgsql_EntityFrameworkCore_PostgreSQL"]...
+   STEP 1/1: /* tables Tbl_BIGINT,Tbl_BINARY,Tbl_BIT,Tbl_CHAR,Tbl_DATE,Tbl_DATETIME,Tbl_DATETIME2,Tbl_DATETIMEOFFSET,Tbl_DECIMAL,Tbl_FLOAT,Tbl_GEOGRAPHY,Tbl_GEOMETRY,Tbl_HIERARCHYID,Tbl_IMAGE,Tbl_INT,Tbl_JSON,Tbl_MONEY,Tbl_NCHAR,Tbl_NTEXT,Tbl_NVARCHAR,Tbl_REAL,Tbl_SMALLDATETIME,Tbl_SMALLINT,Tbl_TEXT,Tbl_TIME,Tbl_TINYINT,Tbl_UNIQUEIDENTIFIER,Tbl_VARBINARY,Tbl_VARCHAR,Tbl_XML */
+   STEP 1/1: /* table Tbl_BIGINT */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => long? DataColumn  */
+   STEP 1/1: /* table Tbl_BINARY */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => byte[] DataColumn  */
+   STEP 1/1: /* table Tbl_BIT */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => bool? DataColumn  */
+   STEP 1/1: /* table Tbl_CHAR */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => string DataColumn  */
+   STEP 1/1: /* table Tbl_DATE */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => DateTime? DataColumn  */
+   STEP 1/1: /* table Tbl_DATETIME */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => DateTime? DataColumn  */
+   STEP 1/1: /* table Tbl_DATETIME2 */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => DateTime? DataColumn  */
+   STEP 1/1: /* table Tbl_DATETIMEOFFSET */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => DateTimeOffset? DataColumn  */
+   STEP 1/1: /* table Tbl_DECIMAL */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => decimal? DataColumn  */
+   STEP 1/1: /* table Tbl_FLOAT */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => double? DataColumn  */
+   STEP 1/1: /* table Tbl_GEOGRAPHY */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* table Tbl_GEOMETRY */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* table Tbl_HIERARCHYID */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* table Tbl_IMAGE */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => byte[] DataColumn  */
+   STEP 1/1: /* table Tbl_INT */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => int? DataColumn  */
+   STEP 1/1: /* table Tbl_JSON */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => string DataColumn  */
+   STEP 1/1: /* table Tbl_MONEY */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => decimal? DataColumn  */
+   STEP 1/1: /* table Tbl_NCHAR */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => string DataColumn  */
+   STEP 1/1: /* table Tbl_NTEXT */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => string DataColumn  */
+   STEP 1/1: /* table Tbl_NVARCHAR */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => string DataColumn  */
+   STEP 1/1: /* table Tbl_REAL */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => float? DataColumn  */
+   STEP 1/1: /* table Tbl_SMALLDATETIME */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => DateTime? DataColumn  */
+   STEP 1/1: /* table Tbl_SMALLINT */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => short? DataColumn  */
+   STEP 1/1: /* table Tbl_TEXT */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => string DataColumn  */
+   STEP 1/1: /* table Tbl_TIME */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => TimeSpan? DataColumn  */
+   STEP 1/1: /* table Tbl_TINYINT */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => byte? DataColumn  */
+   STEP 1/1: /* table Tbl_UNIQUEIDENTIFIER */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => Guid? DataColumn  */
+   STEP 1/1: /* table Tbl_VARBINARY */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => byte[] DataColumn  */
+   STEP 1/1: /* table Tbl_VARCHAR */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => string DataColumn  */
+   STEP 1/1: /* table Tbl_XML */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => string DataColumn  */
+   STEP 1/1: /* connection : Host=127.0.0.1;Port=48910;Database=test206eab629df245a8877c4c18de4832d4;Username=postgres;Password=postgres;Persist Security Info=True */
+   STEP 1/1: /* before created */
+ !!!Npgsql.PostgresException (0x80004005): 42704: type "datetime" does not exist
+ 
+ POSITION: 101
+    at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|234_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+    at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+    at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+    at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+    at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+    at Npgsql.NpgsqlCommand.ExecuteNonQuery(Boolean async, CancellationToken cancellationToken)
+    at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+    at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+    at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+    at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationCommandExecutor.ExecuteNonQueryAsync(IEnumerable`1 migrationCommands, IRelationalConnection connection, CancellationToken cancellationToken)
+    at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationCommandExecutor.ExecuteNonQueryAsync(IEnumerable`1 migrationCommands, IRelationalConnection connection, CancellationToken cancellationToken)
+    at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationCommandExecutor.ExecuteNonQueryAsync(IEnumerable`1 migrationCommands, IRelationalConnection connection, CancellationToken cancellationToken)
+    at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationCommandExecutor.ExecuteNonQueryAsync(IEnumerable`1 migrationCommands, IRelationalConnection connection, CancellationToken cancellationToken)
+    at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator.CreateTablesAsync(CancellationToken cancellationToken)
+    at Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreator.EnsureCreatedAsync(CancellationToken cancellationToken)
+    at Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreator.EnsureCreatedAsync(CancellationToken cancellationToken)
+    at TestEFCoreProviders.TestSimpleTablesMultipleData.Given_The_Database_IsCreated(EFCoreProvider provider) in C:\ignatandrei\TestEFCoreDatabaseProviders\src\TestEFCoreProviders\TestEFCoreProviders\TestSimpleTablesMultipleData.Steps.cs:line 23
+   Exception data:
+     Severity: ERROR
+     SqlState: 42704
+     MessageText: type "datetime" does not exist
+     Position: 101
+     File: parse_type.c
+     Line: 270
+     Routine: typenameType
+   STEP 1/1: GIVEN The Database IsCreated [provider: "Npgsql_EntityFrameworkCore_PostgreSQL"] (Failed after 6s 227ms)
+ tear down /festive_kalam
+
+
+[testcontainers.org 00:00:40.70] Docker container 901de639606f created
+[testcontainers.org 00:00:40.71] Start Docker container 901de639606f
+[testcontainers.org 00:00:41.11] Wait for Docker container 901de639606f to complete readiness checks
+[testcontainers.org 00:00:41.12] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 901de639606f
+[testcontainers.org 00:00:42.23] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 901de639606f
+[testcontainers.org 00:00:43.36] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 901de639606f
+[testcontainers.org 00:00:44.44] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 901de639606f
+[testcontainers.org 00:00:45.54] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 901de639606f
+[testcontainers.org 00:00:46.67] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 901de639606f
+[testcontainers.org 00:00:47.79] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 901de639606f
+[testcontainers.org 00:00:48.87] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 901de639606f
+[testcontainers.org 00:00:49.98] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 901de639606f
+[testcontainers.org 00:00:51.05] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 901de639606f
+[testcontainers.org 00:00:52.13] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 901de639606f
+[testcontainers.org 00:00:53.22] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 901de639606f
+[testcontainers.org 00:00:54.29] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 901de639606f
+[testcontainers.org 00:00:55.41] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 901de639606f
+[testcontainers.org 00:00:56.50] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 901de639606f
+[testcontainers.org 00:00:57.63] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 901de639606f
+[testcontainers.org 00:00:58.76] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 901de639606f
+Fi=005,Fa=002,Pe=001 #  3>   SCENARIO RESULT: Passed after 57s 568ms
+Fi=005,Fa=002,Pe=002 #  7> SCENARIO: SearchSimpleTable [provider: "Microsoft_EntityFrameworkCore_SqlServer"]
+Fi=005,Fa=002,Pe=002 #  7>   STEP 1/13: GIVEN The Database IsCreated [provider: "Microsoft_EntityFrameworkCore_SqlServer"]...
+Fi=005,Fa=002,Pe=002 #  7>   STEP 1/13: /* tables Department */
+Fi=005,Fa=002,Pe=002 #  7>   STEP 1/13: /* table Department */
+Fi=005,Fa=002,Pe=002 #  7>   STEP 1/13: /* column => long IDDepartment  */
+Fi=005,Fa=002,Pe=002 #  7>   STEP 1/13: /* column => string Name  */
+[testcontainers.org 00:00:58.90] Docker container 901de639606f ready
+Fi=005,Fa=002,Pe=002 #  6>   STEP 1/1: /* connection : server=127.0.0.1;port=3306;database=teste5bd6614f295460fb22faafe3bb8c1ff;user id=root;password=mysql;persistsecurityinfo=True */
+Fi=005,Fa=002,Pe=002 #  6>   STEP 1/1: /* before created */
+[testcontainers.org 00:00:58.96] Docker container 93d522ea81a1 created
+[testcontainers.org 00:00:58.97] Start Docker container 93d522ea81a1
+[testcontainers.org 00:00:59.45] Wait for Docker container 93d522ea81a1 to complete readiness checks
+[testcontainers.org 00:00:59.45] Execute "/opt/mssql-tools/bin/sqlcmd -Q SELECT 1;" at Docker container 93d522ea81a1
+Fi=005,Fa=002,Pe=002 #  6>   STEP 1/1: GIVEN The Database IsCreated [provider: "MySql_EntityFrameworkCore"] (Failed after 19s 299ms)
+[testcontainers.org 00:00:59.93] Stop Docker container 901de639606f
+[testcontainers.org 00:01:03.85] Delete Docker container 901de639606f
+[testcontainers.org 00:01:08.16] Execute "/opt/mssql-tools/bin/sqlcmd -Q SELECT 1;" at Docker container 93d522ea81a1
+[testcontainers.org 00:01:09.28] Execute "/opt/mssql-tools/bin/sqlcmd -Q SELECT 1;" at Docker container 93d522ea81a1
+[testcontainers.org 00:01:09.36] Docker container 93d522ea81a1 ready
+Fi=005,Fa=002,Pe=002 #  7>   STEP 1/13: /* connection : Data Source=127.0.0.1,1433;Initial Catalog=testce6d0908586440198ec7fa2f571cb68b;Persist Security Info=True;User ID=sa;Password=<YourStrong@Passw0rd>;TrustServerCertificate=True */
+Fi=005,Fa=002,Pe=002 #  7>   STEP 1/13: /* before created */
+Fi=005,Fa=002,Pe=002 #  7>   STEP 1/13: /* after created */
+Fi=005,Fa=002,Pe=002 #  7>   STEP 1/13: GIVEN The Database IsCreated [provider: "Microsoft_EntityFrameworkCore_SqlServer"] (Passed after 11s 486ms)
+Fi=005,Fa=002,Pe=002 #  7>   STEP 2/13: WHEN Creating Nr "22" Departments...
+Fi=005,Fa=002,Pe=002 #  7>   STEP 2/13: WHEN Creating Nr "22" Departments (Passed after 80ms)
+Fi=005,Fa=002,Pe=002 #  7>   STEP 3/13: AND Search For id1 "21" and id2 "20" is success...
+Fi=005,Fa=002,Pe=002 #  7>   STEP 3/13: AND Search For id1 "21" and id2 "20" is success (Passed after 73ms)
+Fi=005,Fa=002,Pe=002 #  7>   STEP 4/13: AND Search For Id That Is Criteria "Different" Than nr "1" the results number are "21"...
+Fi=005,Fa=002,Pe=002 #  7>   STEP 4/13: AND Search For Id That Is Criteria "Different" Than nr "1" the results number are "21" (Passed after 6ms)
+Fi=005,Fa=002,Pe=002 #  7>   STEP 5/13: AND Search For Id That Is Criteria "Different" Than nr "122" the results number are "22"...
+Fi=005,Fa=002,Pe=002 #  7>   STEP 5/13: AND Search For Id That Is Criteria "Different" Than nr "122" the results number are "22" (Passed after 2ms)
+Fi=005,Fa=002,Pe=002 #  7>   STEP 6/13: AND Search For Id That Is Criteria "GreaterOrEqual" Than nr "1" the results number are "22"...
+Fi=005,Fa=002,Pe=002 #  7>   STEP 6/13: AND Search For Id That Is Criteria "GreaterOrEqual" Than nr "1" the results number are "22" (Passed after 4ms)
+Fi=005,Fa=002,Pe=002 #  7>   STEP 7/13: AND Search For Id That Is Criteria "Greater" Than nr "1" the results number are "21"...
+Fi=005,Fa=002,Pe=002 #  7>   STEP 7/13: AND Search For Id That Is Criteria "Greater" Than nr "1" the results number are "21" (Passed after 4ms)
+Fi=005,Fa=002,Pe=002 #  7>   STEP 8/13: AND Search For Id That Is Criteria "Less" Than nr "1" the results number are "0"...
+Fi=005,Fa=002,Pe=002 #  7>   STEP 8/13: AND Search For Id That Is Criteria "Less" Than nr "1" the results number are "0" (Passed after 4ms)
+Fi=005,Fa=002,Pe=002 #  7>   STEP 9/13: AND Search For Id That Is Criteria "LessOrEqual" Than nr "1" the results number are "1"...
+Fi=005,Fa=002,Pe=002 #  7>   STEP 9/13: AND Search For Id That Is Criteria "LessOrEqual" Than nr "1" the results number are "1" (Passed after 4ms)
+Fi=005,Fa=002,Pe=002 #  7>   STEP 10/13: AND Search For Name That Is Criteria "StartsWith" For searchString "An" the results number are "22"...
+Fi=005,Fa=002,Pe=002 #  7>   STEP 10/13: AND Search For Name That Is Criteria "StartsWith" For searchString "An" the results number are "22" (Passed after 14ms)
+Fi=005,Fa=002,Pe=002 #  7>   STEP 11/13: AND Search For Name That Is Criteria "StartsWith" For searchString "XAn" the results number are "0"...
+Fi=005,Fa=002,Pe=002 #  7>   STEP 11/13: AND Search For Name That Is Criteria "StartsWith" For searchString "XAn" the results number are "0" (Passed after 1ms)
+Fi=005,Fa=002,Pe=002 #  7>   STEP 12/13: AND Search For Name That Is Criteria "StartsWith" For searchString "Andrei 1" the results number are "11"...
+Fi=005,Fa=002,Pe=002 #  7>   STEP 12/13: AND Search For Name That Is Criteria "StartsWith" For searchString "Andrei 1" the results number are "11" (Passed after 2ms)
+Fi=005,Fa=002,Pe=002 #  7>   STEP 13/13: AND Search For Name That Is Criteria "EndsWith" For searchString "11" the results number are "1"...
+Fi=005,Fa=002,Pe=002 #  7>   STEP 13/13: AND Search For Name That Is Criteria "EndsWith" For searchString "11" the results number are "1" (Passed after 4ms)
+[testcontainers.org 00:01:10.52] Stop Docker container 93d522ea81a1
+[testcontainers.org 00:01:11.60] Delete Docker container 93d522ea81a1
+Fi=006,Fa=003,Pe=001 #  6>   SCENARIO RESULT: Failed after 53s 264ms
+                               Step 1: MySql.Data.MySqlClient.MySqlException : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'image NULL,
+                               	    PRIMARY KEY (`ID`)
+                               	)' at line 3
+                               	at MySql.Data.MySqlClient.MySqlStream.ReadPacketAsync(Boolean execAsync)
+                               	at MySql.Data.MySqlClient.NativeDriver.GetResultAsync(Int32 affectedRow, Int64 insertedId, Boolean execAsync)
+                               	at MySql.Data.MySqlClient.Driver.GetResultAsync(Int32 statementId, Int32 affectedRows, Int64 insertedId, Boolean execAsync)
+                               	at MySql.Data.MySqlClient.Driver.NextResultAsync(Int32 statementId, Boolean force, Boolean execAsync)
+                               	at MySql.Data.MySqlClient.MySqlDataReader.NextResultAsync(Boolean execAsync, CancellationToken cancellationToken)
+                               	at MySql.Data.MySqlClient.MySqlDataReader.NextResultAsync(Boolean execAsync, CancellationToken cancellationToken)
+                               	at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+                               	at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+Fi=006,Fa=003,Pe=002 #  8> SCENARIO: CrudMultipleSimpleTable [provider: "Microsoft_EntityFrameworkCore_SqlServer"]
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: GIVEN The Database IsCreated [provider: "Microsoft_EntityFrameworkCore_SqlServer"]...
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* tables Tbl_BIGINT,Tbl_BINARY,Tbl_BIT,Tbl_CHAR,Tbl_DATE,Tbl_DATETIME,Tbl_DATETIME2,Tbl_DATETIMEOFFSET,Tbl_DECIMAL,Tbl_FLOAT,Tbl_GEOGRAPHY,Tbl_GEOMETRY,Tbl_HIERARCHYID,Tbl_IMAGE,Tbl_INT,Tbl_JSON,Tbl_MONEY,Tbl_NCHAR,Tbl_NTEXT,Tbl_NVARCHAR,Tbl_REAL,Tbl_SMALLDATETIME,Tbl_SMALLINT,Tbl_TEXT,Tbl_TIME,Tbl_TINYINT,Tbl_UNIQUEIDENTIFIER,Tbl_VARBINARY,Tbl_VARCHAR,Tbl_XML */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* table Tbl_BIGINT */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => int ID  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => long? DataColumn  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* table Tbl_BINARY */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => int ID  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => byte[] DataColumn  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* table Tbl_BIT */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => int ID  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => bool? DataColumn  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* table Tbl_CHAR */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => int ID  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => string DataColumn  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* table Tbl_DATE */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => int ID  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => DateTime? DataColumn  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* table Tbl_DATETIME */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => int ID  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => DateTime? DataColumn  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* table Tbl_DATETIME2 */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => int ID  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => DateTime? DataColumn  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* table Tbl_DATETIMEOFFSET */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => int ID  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => DateTimeOffset? DataColumn  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* table Tbl_DECIMAL */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => int ID  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => decimal? DataColumn  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* table Tbl_FLOAT */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => int ID  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => double? DataColumn  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* table Tbl_GEOGRAPHY */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => int ID  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* table Tbl_GEOMETRY */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => int ID  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* table Tbl_HIERARCHYID */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => int ID  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* table Tbl_IMAGE */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => int ID  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => byte[] DataColumn  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* table Tbl_INT */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => int ID  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => int? DataColumn  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* table Tbl_JSON */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => int ID  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => string DataColumn  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* table Tbl_MONEY */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => int ID  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => decimal? DataColumn  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* table Tbl_NCHAR */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => int ID  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => string DataColumn  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* table Tbl_NTEXT */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => int ID  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => string DataColumn  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* table Tbl_NVARCHAR */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => int ID  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => string DataColumn  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* table Tbl_REAL */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => int ID  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => float? DataColumn  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* table Tbl_SMALLDATETIME */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => int ID  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => DateTime? DataColumn  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* table Tbl_SMALLINT */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => int ID  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => short? DataColumn  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* table Tbl_TEXT */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => int ID  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => string DataColumn  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* table Tbl_TIME */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => int ID  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => TimeSpan? DataColumn  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* table Tbl_TINYINT */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => int ID  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => byte? DataColumn  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* table Tbl_UNIQUEIDENTIFIER */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => int ID  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => Guid? DataColumn  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* table Tbl_VARBINARY */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => int ID  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => byte[] DataColumn  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* table Tbl_VARCHAR */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => int ID  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => string DataColumn  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* table Tbl_XML */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => int ID  */
+Fi=006,Fa=003,Pe=002 #  8>   STEP 1/1: /* column => string DataColumn  */
+  Failed TestEFCoreProviders.TestSimpleTablesMultipleData.CrudMultipleSimpleTable(provider: MySql_EntityFrameworkCore) [53 s]
+  Error Message:
+   MySql.Data.MySqlClient.MySqlException : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'image NULL,
+    PRIMARY KEY (`ID`)
+)' at line 3
+  Stack Trace:
+     at MySql.Data.MySqlClient.MySqlStream.ReadPacketAsync(Boolean execAsync)
+   at MySql.Data.MySqlClient.NativeDriver.GetResultAsync(Int32 affectedRow, Int64 insertedId, Boolean execAsync)
+   at MySql.Data.MySqlClient.Driver.GetResultAsync(Int32 statementId, Int32 affectedRows, Int64 insertedId, Boolean execAsync)
+   at MySql.Data.MySqlClient.Driver.NextResultAsync(Int32 statementId, Boolean force, Boolean execAsync)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResultAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResultAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQueryAsync(Boolean execAsync, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationCommandExecutor.ExecuteNonQueryAsync(IEnumerable`1 migrationCommands, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationCommandExecutor.ExecuteNonQueryAsync(IEnumerable`1 migrationCommands, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationCommandExecutor.ExecuteNonQueryAsync(IEnumerable`1 migrationCommands, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationCommandExecutor.ExecuteNonQueryAsync(IEnumerable`1 migrationCommands, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreator.EnsureCreatedAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreator.EnsureCreatedAsync(CancellationToken cancellationToken)
+   at TestEFCoreProviders.TestSimpleTablesMultipleData.Given_The_Database_IsCreated(EFCoreProvider provider) in C:\ignatandrei\TestEFCoreDatabaseProviders\src\TestEFCoreProviders\TestEFCoreProviders\TestSimpleTablesMultipleData.Steps.cs:line 23
+   at LightBDD.Framework.Implementation.IntegratedScenarioBuilder`1.RunAsync()
+   at TestEFCoreProviders.TestSimpleTablesMultipleData.CrudMultipleSimpleTable(EFCoreProvider provider) in C:\ignatandrei\TestEFCoreDatabaseProviders\src\TestEFCoreProviders\TestEFCoreProviders\TestSimpleTablesMultipleData.cs:line 24
+--- End of stack trace from previous location ---
+  Standard Output Messages:
+ SCENARIO: CrudMultipleSimpleTable [provider: "MySql_EntityFrameworkCore"]
+   STEP 1/1: GIVEN The Database IsCreated [provider: "MySql_EntityFrameworkCore"]...
+   STEP 1/1: /* tables Tbl_BIGINT,Tbl_BINARY,Tbl_BIT,Tbl_CHAR,Tbl_DATE,Tbl_DATETIME,Tbl_DATETIME2,Tbl_DATETIMEOFFSET,Tbl_DECIMAL,Tbl_FLOAT,Tbl_GEOGRAPHY,Tbl_GEOMETRY,Tbl_HIERARCHYID,Tbl_IMAGE,Tbl_INT,Tbl_JSON,Tbl_MONEY,Tbl_NCHAR,Tbl_NTEXT,Tbl_NVARCHAR,Tbl_REAL,Tbl_SMALLDATETIME,Tbl_SMALLINT,Tbl_TEXT,Tbl_TIME,Tbl_TINYINT,Tbl_UNIQUEIDENTIFIER,Tbl_VARBINARY,Tbl_VARCHAR,Tbl_XML */
+   STEP 1/1: /* table Tbl_BIGINT */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => long? DataColumn  */
+   STEP 1/1: /* table Tbl_BINARY */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => byte[] DataColumn  */
+   STEP 1/1: /* table Tbl_BIT */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => bool? DataColumn  */
+   STEP 1/1: /* table Tbl_CHAR */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => string DataColumn  */
+   STEP 1/1: /* table Tbl_DATE */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => DateTime? DataColumn  */
+   STEP 1/1: /* table Tbl_DATETIME */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => DateTime? DataColumn  */
+   STEP 1/1: /* table Tbl_DATETIME2 */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => DateTime? DataColumn  */
+   STEP 1/1: /* table Tbl_DATETIMEOFFSET */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => DateTimeOffset? DataColumn  */
+   STEP 1/1: /* table Tbl_DECIMAL */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => decimal? DataColumn  */
+   STEP 1/1: /* table Tbl_FLOAT */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => double? DataColumn  */
+   STEP 1/1: /* table Tbl_GEOGRAPHY */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* table Tbl_GEOMETRY */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* table Tbl_HIERARCHYID */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* table Tbl_IMAGE */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => byte[] DataColumn  */
+   STEP 1/1: /* table Tbl_INT */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => int? DataColumn  */
+   STEP 1/1: /* table Tbl_JSON */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => string DataColumn  */
+   STEP 1/1: /* table Tbl_MONEY */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => decimal? DataColumn  */
+   STEP 1/1: /* table Tbl_NCHAR */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => string DataColumn  */
+   STEP 1/1: /* table Tbl_NTEXT */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => string DataColumn  */
+   STEP 1/1: /* table Tbl_NVARCHAR */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => string DataColumn  */
+   STEP 1/1: /* table Tbl_REAL */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => float? DataColumn  */
+   STEP 1/1: /* table Tbl_SMALLDATETIME */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => DateTime? DataColumn  */
+   STEP 1/1: /* table Tbl_SMALLINT */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => short? DataColumn  */
+   STEP 1/1: /* table Tbl_TEXT */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => string DataColumn  */
+   STEP 1/1: /* table Tbl_TIME */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => TimeSpan? DataColumn  */
+   STEP 1/1: /* table Tbl_TINYINT */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => byte? DataColumn  */
+   STEP 1/1: /* table Tbl_UNIQUEIDENTIFIER */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => Guid? DataColumn  */
+   STEP 1/1: /* table Tbl_VARBINARY */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => byte[] DataColumn  */
+   STEP 1/1: /* table Tbl_VARCHAR */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => string DataColumn  */
+   STEP 1/1: /* table Tbl_XML */
+   STEP 1/1: /* column => int ID  */
+   STEP 1/1: /* column => string DataColumn  */
+   STEP 1/1: /* connection : server=127.0.0.1;port=3306;database=teste5bd6614f295460fb22faafe3bb8c1ff;user id=root;password=mysql;persistsecurityinfo=True */
+   STEP 1/1: /* before created */
+ !!!MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'image NULL,
+     PRIMARY KEY (`ID`)
+ )' at line 3
+    at MySql.Data.MySqlClient.MySqlStream.ReadPacketAsync(Boolean execAsync)
+    at MySql.Data.MySqlClient.NativeDriver.GetResultAsync(Int32 affectedRow, Int64 insertedId, Boolean execAsync)
+    at MySql.Data.MySqlClient.Driver.GetResultAsync(Int32 statementId, Int32 affectedRows, Int64 insertedId, Boolean execAsync)
+    at MySql.Data.MySqlClient.Driver.NextResultAsync(Int32 statementId, Boolean force, Boolean execAsync)
+    at MySql.Data.MySqlClient.MySqlDataReader.NextResultAsync(Boolean execAsync, CancellationToken cancellationToken)
+    at MySql.Data.MySqlClient.MySqlDataReader.NextResultAsync(Boolean execAsync, CancellationToken cancellationToken)
+    at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+    at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+    at MySql.Data.MySqlClient.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, Boolean execAsync, CancellationToken cancellationToken)
+    at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQueryAsync(Boolean execAsync, CancellationToken cancellationToken)
+    at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+    at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+    at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+    at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationCommandExecutor.ExecuteNonQueryAsync(IEnumerable`1 migrationCommands, IRelationalConnection connection, CancellationToken cancellationToken)
+    at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationCommandExecutor.ExecuteNonQueryAsync(IEnumerable`1 migrationCommands, IRelationalConnection connection, CancellationToken cancellationToken)
+    at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationCommandExecutor.ExecuteNonQueryAsync(IEnumerable`1 migrationCommands, IRelationalConnection connection, CancellationToken cancellationToken)
+    at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationCommandExecutor.ExecuteNonQueryAsync(IEnumerable`1 migrationCommands, IRelationalConnection connection, CancellationToken cancellationToken)
+    at Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreator.EnsureCreatedAsync(CancellationToken cancellationToken)
+    at Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreator.EnsureCreatedAsync(CancellationToken cancellationToken)
+    at TestEFCoreProviders.TestSimpleTablesMultipleData.Given_The_Database_IsCreated(EFCoreProvider provider) in C:\ignatandrei\TestEFCoreDatabaseProviders\src\TestEFCoreProviders\TestEFCoreProviders\TestSimpleTablesMultipleData.Steps.cs:line 23
+   STEP 1/1: GIVEN The Database IsCreated [provider: "MySql_EntityFrameworkCore"] (Failed after 19s 299ms)
+ tear down /hungry_villani
+
+
+[testcontainers.org 00:01:33.96] Docker container 6ab5ab44d46c created
+[testcontainers.org 00:01:33.97] Start Docker container 6ab5ab44d46c
+[testcontainers.org 00:01:34.29] Wait for Docker container 6ab5ab44d46c to complete readiness checks
+[testcontainers.org 00:01:34.30] Execute "/opt/mssql-tools/bin/sqlcmd -Q SELECT 1;" at Docker container 6ab5ab44d46c
+[testcontainers.org 00:01:40.96] Execute "/opt/mssql-tools/bin/sqlcmd -Q SELECT 1;" at Docker container 6ab5ab44d46c
+Fi=007,Fa=003,Pe=001 #  7>   SCENARIO RESULT: Passed after 42s 809ms
+Fi=007,Fa=003,Pe=002 #  9> SCENARIO: SearchSimpleTable [provider: "Pomelo_EntityFrameworkCore_MySql"]
+Fi=007,Fa=003,Pe=002 #  9>   STEP 1/13: GIVEN The Database IsCreated [provider: "Pomelo_EntityFrameworkCore_MySql"]...
+Fi=007,Fa=003,Pe=002 #  9>   STEP 1/13: /* tables Department */
+Fi=007,Fa=003,Pe=002 #  9>   STEP 1/13: /* table Department */
+Fi=007,Fa=003,Pe=002 #  9>   STEP 1/13: /* column => long IDDepartment  */
+Fi=007,Fa=003,Pe=002 #  9>   STEP 1/13: /* column => string Name  */
+[testcontainers.org 00:01:41.90] Docker container c3a9dacf2f4b created
+[testcontainers.org 00:01:41.91] Start Docker container c3a9dacf2f4b
+[testcontainers.org 00:01:42.09] Execute "/opt/mssql-tools/bin/sqlcmd -Q SELECT 1;" at Docker container 6ab5ab44d46c
+[testcontainers.org 00:01:42.15] Docker container 6ab5ab44d46c ready
+Fi=007,Fa=003,Pe=002 #  8>   STEP 1/1: /* connection : Data Source=127.0.0.1,1433;Initial Catalog=test32f4577cb47147d8a1f1e4bc422191ec;Persist Security Info=True;User ID=sa;Password=<YourStrong@Passw0rd>;TrustServerCertificate=True */
+Fi=007,Fa=003,Pe=002 #  8>   STEP 1/1: /* before created */
+[testcontainers.org 00:01:42.39] Wait for Docker container c3a9dacf2f4b to complete readiness checks
+[testcontainers.org 00:01:42.40] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container c3a9dacf2f4b
+Fi=007,Fa=003,Pe=002 #  8>   STEP 1/1: /* after created */
+Fi=007,Fa=003,Pe=002 #  8>   STEP 1/1: GIVEN The Database IsCreated [provider: "Microsoft_EntityFrameworkCore_SqlServer"] (Passed after 9s 406ms)
+[testcontainers.org 00:01:43.30] Stop Docker container 6ab5ab44d46c
+[testcontainers.org 00:01:43.53] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container c3a9dacf2f4b
+[testcontainers.org 00:01:44.63] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container c3a9dacf2f4b
+[testcontainers.org 00:01:45.02] Delete Docker container 6ab5ab44d46c
+[testcontainers.org 00:01:45.81] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container c3a9dacf2f4b
+[testcontainers.org 00:01:46.93] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container c3a9dacf2f4b
+[testcontainers.org 00:01:48.02] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container c3a9dacf2f4b
+[testcontainers.org 00:01:49.09] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container c3a9dacf2f4b
+[testcontainers.org 00:01:50.20] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container c3a9dacf2f4b
+[testcontainers.org 00:01:51.29] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container c3a9dacf2f4b
+[testcontainers.org 00:01:52.39] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container c3a9dacf2f4b
+[testcontainers.org 00:01:53.47] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container c3a9dacf2f4b
+[testcontainers.org 00:01:54.57] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container c3a9dacf2f4b
+[testcontainers.org 00:01:55.66] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container c3a9dacf2f4b
+[testcontainers.org 00:01:56.78] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container c3a9dacf2f4b
+[testcontainers.org 00:01:57.89] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container c3a9dacf2f4b
+[testcontainers.org 00:01:59.01] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container c3a9dacf2f4b
+[testcontainers.org 00:02:00.12] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container c3a9dacf2f4b
+[testcontainers.org 00:02:01.23] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container c3a9dacf2f4b
+[testcontainers.org 00:02:01.31] Docker container c3a9dacf2f4b ready
+Fi=007,Fa=003,Pe=002 #  9>   STEP 1/13: /* connection : Server=127.0.0.1;Port=3306;User ID=root;Password=mysql;Database=testfc3a4f93a4114164a4a501a6050cf1d5;Persist Security Info=True */
+Fi=007,Fa=003,Pe=002 #  9>   STEP 1/13: /* after use mysql */
+Fi=007,Fa=003,Pe=002 #  9>   STEP 1/13: /* before created */
+Fi=007,Fa=003,Pe=002 #  9>   STEP 1/13: /* after created */
+Fi=007,Fa=003,Pe=002 #  9>   STEP 1/13: GIVEN The Database IsCreated [provider: "Pomelo_EntityFrameworkCore_MySql"] (Passed after 19s 943ms)
+Fi=007,Fa=003,Pe=002 #  9>   STEP 2/13: WHEN Creating Nr "22" Departments...
+Fi=007,Fa=003,Pe=002 #  9>   STEP 2/13: /* after use mysql */
+Fi=007,Fa=003,Pe=002 #  9>   STEP 2/13: WHEN Creating Nr "22" Departments (Passed after 77ms)
+Fi=007,Fa=003,Pe=002 #  9>   STEP 3/13: AND Search For id1 "21" and id2 "20" is success...
+Fi=007,Fa=003,Pe=002 #  9>   STEP 3/13: /* after use mysql */
+Fi=007,Fa=003,Pe=002 #  9>   STEP 3/13: AND Search For id1 "21" and id2 "20" is success (Passed after 60ms)
+Fi=007,Fa=003,Pe=002 #  9>   STEP 4/13: AND Search For Id That Is Criteria "Different" Than nr "1" the results number are "21"...
+Fi=007,Fa=003,Pe=002 #  9>   STEP 4/13: /* after use mysql */
+Fi=007,Fa=003,Pe=002 #  9>   STEP 4/13: AND Search For Id That Is Criteria "Different" Than nr "1" the results number are "21" (Passed after 7ms)
+Fi=007,Fa=003,Pe=002 #  9>   STEP 5/13: AND Search For Id That Is Criteria "Different" Than nr "122" the results number are "22"...
+Fi=007,Fa=003,Pe=002 #  9>   STEP 5/13: /* after use mysql */
+Fi=007,Fa=003,Pe=002 #  9>   STEP 5/13: AND Search For Id That Is Criteria "Different" Than nr "122" the results number are "22" (Passed after 16ms)
+Fi=007,Fa=003,Pe=002 #  9>   STEP 6/13: AND Search For Id That Is Criteria "GreaterOrEqual" Than nr "1" the results number are "22"...
+Fi=007,Fa=003,Pe=002 #  9>   STEP 6/13: /* after use mysql */
+Fi=007,Fa=003,Pe=002 #  9>   STEP 6/13: AND Search For Id That Is Criteria "GreaterOrEqual" Than nr "1" the results number are "22" (Passed after 5ms)
+Fi=007,Fa=003,Pe=002 #  9>   STEP 7/13: AND Search For Id That Is Criteria "Greater" Than nr "1" the results number are "21"...
+Fi=007,Fa=003,Pe=002 #  9>   STEP 7/13: /* after use mysql */
+Fi=007,Fa=003,Pe=002 #  9>   STEP 7/13: AND Search For Id That Is Criteria "Greater" Than nr "1" the results number are "21" (Passed after 5ms)
+Fi=007,Fa=003,Pe=002 #  9>   STEP 8/13: AND Search For Id That Is Criteria "Less" Than nr "1" the results number are "0"...
+Fi=007,Fa=003,Pe=002 #  9>   STEP 8/13: /* after use mysql */
+Fi=007,Fa=003,Pe=002 #  9>   STEP 8/13: AND Search For Id That Is Criteria "Less" Than nr "1" the results number are "0" (Passed after 4ms)
+Fi=007,Fa=003,Pe=002 #  9>   STEP 9/13: AND Search For Id That Is Criteria "LessOrEqual" Than nr "1" the results number are "1"...
+Fi=007,Fa=003,Pe=002 #  9>   STEP 9/13: /* after use mysql */
+Fi=007,Fa=003,Pe=002 #  9>   STEP 9/13: AND Search For Id That Is Criteria "LessOrEqual" Than nr "1" the results number are "1" (Passed after 4ms)
+Fi=007,Fa=003,Pe=002 #  9>   STEP 10/13: AND Search For Name That Is Criteria "StartsWith" For searchString "An" the results number are "22"...
+Fi=007,Fa=003,Pe=002 #  9>   STEP 10/13: /* after use mysql */
+Fi=007,Fa=003,Pe=002 #  9>   STEP 10/13: AND Search For Name That Is Criteria "StartsWith" For searchString "An" the results number are "22" (Passed after 7ms)
+Fi=007,Fa=003,Pe=002 #  9>   STEP 11/13: AND Search For Name That Is Criteria "StartsWith" For searchString "XAn" the results number are "0"...
+Fi=007,Fa=003,Pe=002 #  9>   STEP 11/13: /* after use mysql */
+Fi=007,Fa=003,Pe=002 #  9>   STEP 11/13: AND Search For Name That Is Criteria "StartsWith" For searchString "XAn" the results number are "0" (Passed after 2ms)
+Fi=007,Fa=003,Pe=002 #  9>   STEP 12/13: AND Search For Name That Is Criteria "StartsWith" For searchString "Andrei 1" the results number are "11"...
+Fi=007,Fa=003,Pe=002 #  9>   STEP 12/13: /* after use mysql */
+Fi=007,Fa=003,Pe=002 #  9>   STEP 12/13: AND Search For Name That Is Criteria "StartsWith" For searchString "Andrei 1" the results number are "11" (Passed after 2ms)
+Fi=007,Fa=003,Pe=002 #  9>   STEP 13/13: AND Search For Name That Is Criteria "EndsWith" For searchString "11" the results number are "1"...
+Fi=007,Fa=003,Pe=002 #  9>   STEP 13/13: /* after use mysql */
+Fi=007,Fa=003,Pe=002 #  9>   STEP 13/13: AND Search For Name That Is Criteria "EndsWith" For searchString "11" the results number are "1" (Passed after 5ms)
+[testcontainers.org 00:02:01.78] Stop Docker container c3a9dacf2f4b
+[testcontainers.org 00:02:05.16] Delete Docker container c3a9dacf2f4b
+Fi=008,Fa=003,Pe=001 #  8>   SCENARIO RESULT: Passed after 41s 174ms
+Fi=008,Fa=003,Pe=002 # 10> SCENARIO: CrudMultipleSimpleTable [provider: "Microsoft_EntityFrameworkCore_In_Memory"]
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: GIVEN The Database IsCreated [provider: "Microsoft_EntityFrameworkCore_In_Memory"]...
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* tables Tbl_BIGINT,Tbl_BINARY,Tbl_BIT,Tbl_CHAR,Tbl_DATE,Tbl_DATETIME,Tbl_DATETIME2,Tbl_DATETIMEOFFSET,Tbl_DECIMAL,Tbl_FLOAT,Tbl_GEOGRAPHY,Tbl_GEOMETRY,Tbl_HIERARCHYID,Tbl_IMAGE,Tbl_INT,Tbl_JSON,Tbl_MONEY,Tbl_NCHAR,Tbl_NTEXT,Tbl_NVARCHAR,Tbl_REAL,Tbl_SMALLDATETIME,Tbl_SMALLINT,Tbl_TEXT,Tbl_TIME,Tbl_TINYINT,Tbl_UNIQUEIDENTIFIER,Tbl_VARBINARY,Tbl_VARCHAR,Tbl_XML */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* table Tbl_BIGINT */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => int ID  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => long? DataColumn  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* table Tbl_BINARY */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => int ID  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => byte[] DataColumn  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* table Tbl_BIT */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => int ID  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => bool? DataColumn  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* table Tbl_CHAR */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => int ID  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => string DataColumn  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* table Tbl_DATE */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => int ID  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => DateTime? DataColumn  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* table Tbl_DATETIME */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => int ID  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => DateTime? DataColumn  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* table Tbl_DATETIME2 */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => int ID  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => DateTime? DataColumn  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* table Tbl_DATETIMEOFFSET */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => int ID  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => DateTimeOffset? DataColumn  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* table Tbl_DECIMAL */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => int ID  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => decimal? DataColumn  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* table Tbl_FLOAT */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => int ID  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => double? DataColumn  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* table Tbl_GEOGRAPHY */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => int ID  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* table Tbl_GEOMETRY */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => int ID  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* table Tbl_HIERARCHYID */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => int ID  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* table Tbl_IMAGE */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => int ID  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => byte[] DataColumn  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* table Tbl_INT */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => int ID  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => int? DataColumn  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* table Tbl_JSON */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => int ID  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => string DataColumn  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* table Tbl_MONEY */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => int ID  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => decimal? DataColumn  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* table Tbl_NCHAR */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => int ID  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => string DataColumn  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* table Tbl_NTEXT */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => int ID  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => string DataColumn  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* table Tbl_NVARCHAR */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => int ID  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => string DataColumn  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* table Tbl_REAL */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => int ID  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => float? DataColumn  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* table Tbl_SMALLDATETIME */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => int ID  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => DateTime? DataColumn  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* table Tbl_SMALLINT */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => int ID  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => short? DataColumn  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* table Tbl_TEXT */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => int ID  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => string DataColumn  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* table Tbl_TIME */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => int ID  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => TimeSpan? DataColumn  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* table Tbl_TINYINT */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => int ID  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => byte? DataColumn  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* table Tbl_UNIQUEIDENTIFIER */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => int ID  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => Guid? DataColumn  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* table Tbl_VARBINARY */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => int ID  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => byte[] DataColumn  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* table Tbl_VARCHAR */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => int ID  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => string DataColumn  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* table Tbl_XML */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => int ID  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* column => string DataColumn  */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* connection : test97423cdbdf8a432aab35cc464aa3181f */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* before created */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: /* after created */
+Fi=008,Fa=003,Pe=002 # 10>   STEP 1/1: GIVEN The Database IsCreated [provider: "Microsoft_EntityFrameworkCore_In_Memory"] (Passed after 28ms)
+Fi=009,Fa=003,Pe=001 # 10>   SCENARIO RESULT: Passed after 30ms
+[xUnit.net 00:02:15.43]     TestEFCoreProviders.TestSimpleTablesMultipleData.OnScenarioTearDown [SKIP]
+  Skipped TestEFCoreProviders.TestSimpleTablesMultipleData.OnScenarioTearDown [1 ms]
+Fi=010,Fa=003,Pe=000 #  9>   SCENARIO RESULT: Passed after 53s 577ms
+Fi=010,Fa=003,Pe=001 # 11> SCENARIO: SearchSimpleTable [provider: "Npgsql_EntityFrameworkCore_PostgreSQL"]
+Fi=010,Fa=003,Pe=001 # 11>   STEP 1/13: GIVEN The Database IsCreated [provider: "Npgsql_EntityFrameworkCore_PostgreSQL"]...
+Fi=010,Fa=003,Pe=001 # 11>   STEP 1/13: /* tables Department */
+Fi=010,Fa=003,Pe=001 # 11>   STEP 1/13: /* table Department */
+Fi=010,Fa=003,Pe=001 # 11>   STEP 1/13: /* column => long IDDepartment  */
+Fi=010,Fa=003,Pe=001 # 11>   STEP 1/13: /* column => string Name  */
+[testcontainers.org 00:02:35.29] Docker container 97413081fcd4 created
+[testcontainers.org 00:02:35.30] Start Docker container 97413081fcd4
+[testcontainers.org 00:02:36.66] Wait for Docker container 97413081fcd4 to complete readiness checks
+[testcontainers.org 00:02:37.70] Docker container 97413081fcd4 ready
+Fi=010,Fa=003,Pe=001 # 11>   STEP 1/13: /* connection : Host=127.0.0.1;Port=49047;Database=testaa0d205f440348bcb2c0f4075775f4a3;Username=postgres;Password=postgres;Persist Security Info=True */
+Fi=010,Fa=003,Pe=001 # 11>   STEP 1/13: /* before created */
+Fi=010,Fa=003,Pe=001 # 11>   STEP 1/13: /* after created */
+Fi=010,Fa=003,Pe=001 # 11>   STEP 1/13: GIVEN The Database IsCreated [provider: "Npgsql_EntityFrameworkCore_PostgreSQL"] (Passed after 2s 568ms)
+Fi=010,Fa=003,Pe=001 # 11>   STEP 2/13: WHEN Creating Nr "22" Departments...
+Fi=010,Fa=003,Pe=001 # 11>   STEP 2/13: WHEN Creating Nr "22" Departments (Passed after 56ms)
+Fi=010,Fa=003,Pe=001 # 11>   STEP 3/13: AND Search For id1 "21" and id2 "20" is success...
+Fi=010,Fa=003,Pe=001 # 11>   STEP 3/13: AND Search For id1 "21" and id2 "20" is success (Passed after 23ms)
+Fi=010,Fa=003,Pe=001 # 11>   STEP 4/13: AND Search For Id That Is Criteria "Different" Than nr "1" the results number are "21"...
+Fi=010,Fa=003,Pe=001 # 11>   STEP 4/13: AND Search For Id That Is Criteria "Different" Than nr "1" the results number are "21" (Passed after 6ms)
+Fi=010,Fa=003,Pe=001 # 11>   STEP 5/13: AND Search For Id That Is Criteria "Different" Than nr "122" the results number are "22"...
+Fi=010,Fa=003,Pe=001 # 11>   STEP 5/13: AND Search For Id That Is Criteria "Different" Than nr "122" the results number are "22" (Passed after 1ms)
+Fi=010,Fa=003,Pe=001 # 11>   STEP 6/13: AND Search For Id That Is Criteria "GreaterOrEqual" Than nr "1" the results number are "22"...
+Fi=010,Fa=003,Pe=001 # 11>   STEP 6/13: AND Search For Id That Is Criteria "GreaterOrEqual" Than nr "1" the results number are "22" (Passed after 2ms)
+Fi=010,Fa=003,Pe=001 # 11>   STEP 7/13: AND Search For Id That Is Criteria "Greater" Than nr "1" the results number are "21"...
+Fi=010,Fa=003,Pe=001 # 11>   STEP 7/13: AND Search For Id That Is Criteria "Greater" Than nr "1" the results number are "21" (Passed after 2ms)
+Fi=010,Fa=003,Pe=001 # 11>   STEP 8/13: AND Search For Id That Is Criteria "Less" Than nr "1" the results number are "0"...
+Fi=010,Fa=003,Pe=001 # 11>   STEP 8/13: AND Search For Id That Is Criteria "Less" Than nr "1" the results number are "0" (Passed after 2ms)
+Fi=010,Fa=003,Pe=001 # 11>   STEP 9/13: AND Search For Id That Is Criteria "LessOrEqual" Than nr "1" the results number are "1"...
+Fi=010,Fa=003,Pe=001 # 11>   STEP 9/13: AND Search For Id That Is Criteria "LessOrEqual" Than nr "1" the results number are "1" (Passed after 2ms)
+Fi=010,Fa=003,Pe=001 # 11>   STEP 10/13: AND Search For Name That Is Criteria "StartsWith" For searchString "An" the results number are "22"...
+Fi=010,Fa=003,Pe=001 # 11>   STEP 10/13: AND Search For Name That Is Criteria "StartsWith" For searchString "An" the results number are "22" (Passed after 22ms)
+Fi=010,Fa=003,Pe=001 # 11>   STEP 11/13: AND Search For Name That Is Criteria "StartsWith" For searchString "XAn" the results number are "0"...
+Fi=010,Fa=003,Pe=001 # 11>   STEP 11/13: AND Search For Name That Is Criteria "StartsWith" For searchString "XAn" the results number are "0" (Passed after 1ms)
+Fi=010,Fa=003,Pe=001 # 11>   STEP 12/13: AND Search For Name That Is Criteria "StartsWith" For searchString "Andrei 1" the results number are "11"...
+Fi=010,Fa=003,Pe=001 # 11>   STEP 12/13: AND Search For Name That Is Criteria "StartsWith" For searchString "Andrei 1" the results number are "11" (Passed after 1ms)
+Fi=010,Fa=003,Pe=001 # 11>   STEP 13/13: AND Search For Name That Is Criteria "EndsWith" For searchString "11" the results number are "1"...
+Fi=010,Fa=003,Pe=001 # 11>   STEP 13/13: AND Search For Name That Is Criteria "EndsWith" For searchString "11" the results number are "1" (Passed after 3ms)
+[testcontainers.org 00:02:37.93] Stop Docker container 97413081fcd4
+[testcontainers.org 00:02:38.34] Delete Docker container 97413081fcd4
+Fi=011,Fa=003,Pe=000 # 11>   SCENARIO RESULT: Passed after 33s 195ms
+Fi=011,Fa=003,Pe=001 # 12> SCENARIO: SearchSimpleTable [provider: "Microsoft_EntityFrameworkCore_In_Memory"]
+Fi=011,Fa=003,Pe=001 # 12>   STEP 1/13: GIVEN The Database IsCreated [provider: "Microsoft_EntityFrameworkCore_In_Memory"]...
+Fi=011,Fa=003,Pe=001 # 12>   STEP 1/13: /* tables Department */
+Fi=011,Fa=003,Pe=001 # 12>   STEP 1/13: /* table Department */
+Fi=011,Fa=003,Pe=001 # 12>   STEP 1/13: /* column => long IDDepartment  */
+Fi=011,Fa=003,Pe=001 # 12>   STEP 1/13: /* column => string Name  */
+Fi=011,Fa=003,Pe=001 # 12>   STEP 1/13: /* connection : test1e8c171c094144ffa6e79ec2a60ee9fb */
+Fi=011,Fa=003,Pe=001 # 12>   STEP 1/13: /* before created */
+Fi=011,Fa=003,Pe=001 # 12>   STEP 1/13: /* after created */
+Fi=011,Fa=003,Pe=001 # 12>   STEP 1/13: GIVEN The Database IsCreated [provider: "Microsoft_EntityFrameworkCore_In_Memory"] (Passed after 15ms)
+Fi=011,Fa=003,Pe=001 # 12>   STEP 2/13: WHEN Creating Nr "22" Departments...
+Fi=011,Fa=003,Pe=001 # 12>   STEP 2/13: WHEN Creating Nr "22" Departments (Passed after 28ms)
+Fi=011,Fa=003,Pe=001 # 12>   STEP 3/13: AND Search For id1 "21" and id2 "20" is success...
+Fi=011,Fa=003,Pe=001 # 12>   STEP 3/13: AND Search For id1 "21" and id2 "20" is success (Passed after 32ms)
+Fi=011,Fa=003,Pe=001 # 12>   STEP 4/13: AND Search For Id That Is Criteria "Different" Than nr "1" the results number are "21"...
+Fi=011,Fa=003,Pe=001 # 12>   STEP 4/13: AND Search For Id That Is Criteria "Different" Than nr "1" the results number are "21" (Passed after 5ms)
+Fi=011,Fa=003,Pe=001 # 12>   STEP 5/13: AND Search For Id That Is Criteria "Different" Than nr "122" the results number are "22"...
+Fi=011,Fa=003,Pe=001 # 12>   STEP 5/13: AND Search For Id That Is Criteria "Different" Than nr "122" the results number are "22" (Passed after <1ms)
+Fi=011,Fa=003,Pe=001 # 12>   STEP 6/13: AND Search For Id That Is Criteria "GreaterOrEqual" Than nr "1" the results number are "22"...
+Fi=011,Fa=003,Pe=001 # 12>   STEP 6/13: AND Search For Id That Is Criteria "GreaterOrEqual" Than nr "1" the results number are "22" (Passed after 2ms)
+Fi=011,Fa=003,Pe=001 # 12>   STEP 7/13: AND Search For Id That Is Criteria "Greater" Than nr "1" the results number are "21"...
+Fi=011,Fa=003,Pe=001 # 12>   STEP 7/13: AND Search For Id That Is Criteria "Greater" Than nr "1" the results number are "21" (Passed after 2ms)
+Fi=011,Fa=003,Pe=001 # 12>   STEP 8/13: AND Search For Id That Is Criteria "Less" Than nr "1" the results number are "0"...
+Fi=011,Fa=003,Pe=001 # 12>   STEP 8/13: AND Search For Id That Is Criteria "Less" Than nr "1" the results number are "0" (Passed after 2ms)
+Fi=011,Fa=003,Pe=001 # 12>   STEP 9/13: AND Search For Id That Is Criteria "LessOrEqual" Than nr "1" the results number are "1"...
+Fi=011,Fa=003,Pe=001 # 12>   STEP 9/13: AND Search For Id That Is Criteria "LessOrEqual" Than nr "1" the results number are "1" (Passed after 2ms)
+Fi=011,Fa=003,Pe=001 # 12>   STEP 10/13: AND Search For Name That Is Criteria "StartsWith" For searchString "An" the results number are "22"...
+Fi=011,Fa=003,Pe=001 # 12>   STEP 10/13: AND Search For Name That Is Criteria "StartsWith" For searchString "An" the results number are "22" (Passed after 5ms)
+Fi=011,Fa=003,Pe=001 # 12>   STEP 11/13: AND Search For Name That Is Criteria "StartsWith" For searchString "XAn" the results number are "0"...
+Fi=011,Fa=003,Pe=001 # 12>   STEP 11/13: AND Search For Name That Is Criteria "StartsWith" For searchString "XAn" the results number are "0" (Passed after <1ms)
+Fi=011,Fa=003,Pe=001 # 12>   STEP 12/13: AND Search For Name That Is Criteria "StartsWith" For searchString "Andrei 1" the results number are "11"...
+Fi=011,Fa=003,Pe=001 # 12>   STEP 12/13: AND Search For Name That Is Criteria "StartsWith" For searchString "Andrei 1" the results number are "11" (Passed after <1ms)
+Fi=011,Fa=003,Pe=001 # 12>   STEP 13/13: AND Search For Name That Is Criteria "EndsWith" For searchString "11" the results number are "1"...
+Fi=011,Fa=003,Pe=001 # 12>   STEP 13/13: AND Search For Name That Is Criteria "EndsWith" For searchString "11" the results number are "1" (Passed after 3ms)
+Fi=012,Fa=003,Pe=000 # 12>   SCENARIO RESULT: Passed after 112ms
+Fi=012,Fa=003,Pe=001 # 13> SCENARIO: CrudSimpleTable [provider: "MySql_EntityFrameworkCore"]
+Fi=012,Fa=003,Pe=001 # 13>   STEP 1/8: GIVEN The Database IsCreated [provider: "MySql_EntityFrameworkCore"]...
+Fi=012,Fa=003,Pe=001 # 13>   STEP 1/8: /* tables Department */
+Fi=012,Fa=003,Pe=001 # 13>   STEP 1/8: /* table Department */
+Fi=012,Fa=003,Pe=001 # 13>   STEP 1/8: /* column => long IDDepartment  */
+Fi=012,Fa=003,Pe=001 # 13>   STEP 1/8: /* column => string Name  */
+[testcontainers.org 00:03:08.59] Docker container 6b0a793a8178 created
+[testcontainers.org 00:03:08.60] Start Docker container 6b0a793a8178
+[testcontainers.org 00:03:08.91] Wait for Docker container 6b0a793a8178 to complete readiness checks
+[testcontainers.org 00:03:08.92] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 6b0a793a8178
+[testcontainers.org 00:03:10.03] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 6b0a793a8178
+[testcontainers.org 00:03:11.14] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 6b0a793a8178
+[testcontainers.org 00:03:12.25] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 6b0a793a8178
+[testcontainers.org 00:03:13.35] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 6b0a793a8178
+[testcontainers.org 00:03:14.46] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 6b0a793a8178
+[testcontainers.org 00:03:15.54] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 6b0a793a8178
+[testcontainers.org 00:03:16.63] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 6b0a793a8178
+[testcontainers.org 00:03:17.74] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 6b0a793a8178
+[testcontainers.org 00:03:18.86] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 6b0a793a8178
+[testcontainers.org 00:03:19.94] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 6b0a793a8178
+[testcontainers.org 00:03:21.02] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 6b0a793a8178
+[testcontainers.org 00:03:22.19] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 6b0a793a8178
+[testcontainers.org 00:03:23.30] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 6b0a793a8178
+[testcontainers.org 00:03:24.37] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 6b0a793a8178
+[testcontainers.org 00:03:25.46] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 6b0a793a8178
+[testcontainers.org 00:03:26.56] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 6b0a793a8178
+[testcontainers.org 00:03:26.66] Docker container 6b0a793a8178 ready
+Fi=012,Fa=003,Pe=001 # 13>   STEP 1/8: /* connection : server=127.0.0.1;port=3306;database=test5f9419007244490b849d846ea2723846;user id=root;password=mysql;persistsecurityinfo=True */
+Fi=012,Fa=003,Pe=001 # 13>   STEP 1/8: /* before created */
+Fi=012,Fa=003,Pe=001 # 13>   STEP 1/8: /* after created */
+Fi=012,Fa=003,Pe=001 # 13>   STEP 1/8: GIVEN The Database IsCreated [provider: "MySql_EntityFrameworkCore"] (Passed after 18s 282ms)
+Fi=012,Fa=003,Pe=001 # 13>   STEP 2/8: THEN Number Of Dep Are Nr "0"...
+Fi=012,Fa=003,Pe=001 # 13>   STEP 2/8: THEN Number Of Dep Are Nr "0" (Passed after 17ms)
+Fi=012,Fa=003,Pe=001 # 13>   STEP 3/8: WHEN Creating Nr "5" Departments...
+Fi=012,Fa=003,Pe=001 # 13>   STEP 3/8: WHEN Creating Nr "5" Departments (Passed after 14ms)
+Fi=012,Fa=003,Pe=001 # 13>   STEP 4/8: THEN Number Of Dep Are Nr "5"...
+Fi=012,Fa=003,Pe=001 # 13>   STEP 4/8: THEN Number Of Dep Are Nr "5" (Passed after 3ms)
+Fi=012,Fa=003,Pe=001 # 13>   STEP 5/8: WHEN Deleting Department With id "2"...
+Fi=012,Fa=003,Pe=001 # 13>   STEP 5/8: WHEN Deleting Department With id "2" (Passed after 25ms)
+Fi=012,Fa=003,Pe=001 # 13>   STEP 6/8: THEN Number Of Dep Are Nr "4"...
+Fi=012,Fa=003,Pe=001 # 13>   STEP 6/8: THEN Number Of Dep Are Nr "4" (Passed after 3ms)
+Fi=012,Fa=003,Pe=001 # 13>   STEP 7/8: WHEN Modify Department With id "4" and name "ba48d5906e4c458b9be5ca54cf7b5f7e"...
+Fi=012,Fa=003,Pe=001 # 13>   STEP 7/8: WHEN Modify Department With id "4" and name "ba48d5906e4c458b9be5ca54cf7b5f7e" (Passed after 13ms)
+Fi=012,Fa=003,Pe=001 # 13>   STEP 8/8: THEN For id "4" has name "ba48d5906e4c458b9be5ca54cf7b5f7e"...
+Fi=012,Fa=003,Pe=001 # 13>   STEP 8/8: THEN For id "4" has name "ba48d5906e4c458b9be5ca54cf7b5f7e" (Passed after 5ms)
+[testcontainers.org 00:03:26.89] Stop Docker container 6b0a793a8178
+[testcontainers.org 00:03:30.15] Delete Docker container 6b0a793a8178
+Fi=013,Fa=003,Pe=000 # 13>   SCENARIO RESULT: Passed after 51s 672ms
+Fi=013,Fa=003,Pe=001 # 14> SCENARIO: CrudSimpleTable [provider: "Microsoft_EntityFrameworkCore_SqlServer"]
+Fi=013,Fa=003,Pe=001 # 14>   STEP 1/8: GIVEN The Database IsCreated [provider: "Microsoft_EntityFrameworkCore_SqlServer"]...
+Fi=013,Fa=003,Pe=001 # 14>   STEP 1/8: /* tables Department */
+Fi=013,Fa=003,Pe=001 # 14>   STEP 1/8: /* table Department */
+Fi=013,Fa=003,Pe=001 # 14>   STEP 1/8: /* column => long IDDepartment  */
+Fi=013,Fa=003,Pe=001 # 14>   STEP 1/8: /* column => string Name  */
+[testcontainers.org 00:04:00.26] Docker container ee0c9ae43984 created
+[testcontainers.org 00:04:00.27] Start Docker container ee0c9ae43984
+[testcontainers.org 00:04:00.65] Wait for Docker container ee0c9ae43984 to complete readiness checks
+[testcontainers.org 00:04:00.66] Execute "/opt/mssql-tools/bin/sqlcmd -Q SELECT 1;" at Docker container ee0c9ae43984
+[testcontainers.org 00:04:07.27] Execute "/opt/mssql-tools/bin/sqlcmd -Q SELECT 1;" at Docker container ee0c9ae43984
+[testcontainers.org 00:04:08.39] Execute "/opt/mssql-tools/bin/sqlcmd -Q SELECT 1;" at Docker container ee0c9ae43984
+[testcontainers.org 00:04:08.50] Docker container ee0c9ae43984 ready
+Fi=013,Fa=003,Pe=001 # 14>   STEP 1/8: /* connection : Data Source=127.0.0.1,1433;Initial Catalog=test1df4585294c04ec5a8545ff2a51dd6fb;Persist Security Info=True;User ID=sa;Password=<YourStrong@Passw0rd>;TrustServerCertificate=True */
+Fi=013,Fa=003,Pe=001 # 14>   STEP 1/8: /* before created */
+Fi=013,Fa=003,Pe=001 # 14>   STEP 1/8: /* after created */
+Fi=013,Fa=003,Pe=001 # 14>   STEP 1/8: GIVEN The Database IsCreated [provider: "Microsoft_EntityFrameworkCore_SqlServer"] (Passed after 9s 086ms)
+Fi=013,Fa=003,Pe=001 # 14>   STEP 2/8: THEN Number Of Dep Are Nr "0"...
+Fi=013,Fa=003,Pe=001 # 14>   STEP 2/8: THEN Number Of Dep Are Nr "0" (Passed after 48ms)
+Fi=013,Fa=003,Pe=001 # 14>   STEP 3/8: WHEN Creating Nr "5" Departments...
+Fi=013,Fa=003,Pe=001 # 14>   STEP 3/8: WHEN Creating Nr "5" Departments (Passed after 16ms)
+Fi=013,Fa=003,Pe=001 # 14>   STEP 4/8: THEN Number Of Dep Are Nr "5"...
+Fi=013,Fa=003,Pe=001 # 14>   STEP 4/8: THEN Number Of Dep Are Nr "5" (Passed after 2ms)
+Fi=013,Fa=003,Pe=001 # 14>   STEP 5/8: WHEN Deleting Department With id "2"...
+Fi=013,Fa=003,Pe=001 # 14>   STEP 5/8: WHEN Deleting Department With id "2" (Passed after 20ms)
+Fi=013,Fa=003,Pe=001 # 14>   STEP 6/8: THEN Number Of Dep Are Nr "4"...
+Fi=013,Fa=003,Pe=001 # 14>   STEP 6/8: THEN Number Of Dep Are Nr "4" (Passed after 2ms)
+Fi=013,Fa=003,Pe=001 # 14>   STEP 7/8: WHEN Modify Department With id "4" and name "8dba46548c854e049a63c4e0754159c6"...
+Fi=013,Fa=003,Pe=001 # 14>   STEP 7/8: WHEN Modify Department With id "4" and name "8dba46548c854e049a63c4e0754159c6" (Passed after 16ms)
+Fi=013,Fa=003,Pe=001 # 14>   STEP 8/8: THEN For id "4" has name "8dba46548c854e049a63c4e0754159c6"...
+Fi=013,Fa=003,Pe=001 # 14>   STEP 8/8: THEN For id "4" has name "8dba46548c854e049a63c4e0754159c6" (Passed after 2ms)
+[testcontainers.org 00:04:09.40] Stop Docker container ee0c9ae43984
+[testcontainers.org 00:04:10.40] Delete Docker container ee0c9ae43984
+Fi=014,Fa=003,Pe=000 # 14>   SCENARIO RESULT: Passed after 40s 247ms
+Fi=014,Fa=003,Pe=001 # 15> SCENARIO: CrudSimpleTable [provider: "Pomelo_EntityFrameworkCore_MySql"]
+Fi=014,Fa=003,Pe=001 # 15>   STEP 1/8: GIVEN The Database IsCreated [provider: "Pomelo_EntityFrameworkCore_MySql"]...
+Fi=014,Fa=003,Pe=001 # 15>   STEP 1/8: /* tables Department */
+Fi=014,Fa=003,Pe=001 # 15>   STEP 1/8: /* table Department */
+Fi=014,Fa=003,Pe=001 # 15>   STEP 1/8: /* column => long IDDepartment  */
+Fi=014,Fa=003,Pe=001 # 15>   STEP 1/8: /* column => string Name  */
+[testcontainers.org 00:04:40.53] Docker container 8af7edfce6cd created
+[testcontainers.org 00:04:40.54] Start Docker container 8af7edfce6cd
+[testcontainers.org 00:04:40.91] Wait for Docker container 8af7edfce6cd to complete readiness checks
+[testcontainers.org 00:04:40.92] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 8af7edfce6cd
+[testcontainers.org 00:04:42.03] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 8af7edfce6cd
+[testcontainers.org 00:04:43.13] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 8af7edfce6cd
+[testcontainers.org 00:04:44.23] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 8af7edfce6cd
+[testcontainers.org 00:04:45.35] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 8af7edfce6cd
+[testcontainers.org 00:04:46.46] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 8af7edfce6cd
+[testcontainers.org 00:04:47.56] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 8af7edfce6cd
+[testcontainers.org 00:04:48.64] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 8af7edfce6cd
+[testcontainers.org 00:04:49.75] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 8af7edfce6cd
+[testcontainers.org 00:04:50.83] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 8af7edfce6cd
+[testcontainers.org 00:04:51.92] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 8af7edfce6cd
+[testcontainers.org 00:04:53.04] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 8af7edfce6cd
+[testcontainers.org 00:04:54.13] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 8af7edfce6cd
+[testcontainers.org 00:04:55.26] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 8af7edfce6cd
+[testcontainers.org 00:04:56.38] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 8af7edfce6cd
+[testcontainers.org 00:04:57.51] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 8af7edfce6cd
+[testcontainers.org 00:04:58.63] Execute "mysql --protocol=TCP --port=3306 --user=mysql --password=mysql test --wait --silent --execute=SELECT 1;" at Docker container 8af7edfce6cd
+[testcontainers.org 00:04:58.74] Docker container 8af7edfce6cd ready
+Fi=014,Fa=003,Pe=001 # 15>   STEP 1/8: /* connection : Server=127.0.0.1;Port=3306;User ID=root;Password=mysql;Database=test75ecc8486f5e4503aee94c1cd28e62dd;Persist Security Info=True */
+Fi=014,Fa=003,Pe=001 # 15>   STEP 1/8: /* after use mysql */
+Fi=014,Fa=003,Pe=001 # 15>   STEP 1/8: /* before created */
+Fi=014,Fa=003,Pe=001 # 15>   STEP 1/8: /* after created */
+Fi=014,Fa=003,Pe=001 # 15>   STEP 1/8: GIVEN The Database IsCreated [provider: "Pomelo_EntityFrameworkCore_MySql"] (Passed after 18s 426ms)
+Fi=014,Fa=003,Pe=001 # 15>   STEP 2/8: THEN Number Of Dep Are Nr "0"...
+Fi=014,Fa=003,Pe=001 # 15>   STEP 2/8: /* after use mysql */
+Fi=014,Fa=003,Pe=001 # 15>   STEP 2/8: THEN Number Of Dep Are Nr "0" (Passed after 7ms)
+Fi=014,Fa=003,Pe=001 # 15>   STEP 3/8: WHEN Creating Nr "5" Departments...
+Fi=014,Fa=003,Pe=001 # 15>   STEP 3/8: /* after use mysql */
+Fi=014,Fa=003,Pe=001 # 15>   STEP 3/8: WHEN Creating Nr "5" Departments (Passed after 17ms)
+Fi=014,Fa=003,Pe=001 # 15>   STEP 4/8: THEN Number Of Dep Are Nr "5"...
+Fi=014,Fa=003,Pe=001 # 15>   STEP 4/8: /* after use mysql */
+Fi=014,Fa=003,Pe=001 # 15>   STEP 4/8: THEN Number Of Dep Are Nr "5" (Passed after 3ms)
+Fi=014,Fa=003,Pe=001 # 15>   STEP 5/8: WHEN Deleting Department With id "2"...
+Fi=014,Fa=003,Pe=001 # 15>   STEP 5/8: /* after use mysql */
+Fi=014,Fa=003,Pe=001 # 15>   STEP 5/8: WHEN Deleting Department With id "2" (Passed after 14ms)
+Fi=014,Fa=003,Pe=001 # 15>   STEP 6/8: THEN Number Of Dep Are Nr "4"...
+Fi=014,Fa=003,Pe=001 # 15>   STEP 6/8: /* after use mysql */
+Fi=014,Fa=003,Pe=001 # 15>   STEP 6/8: THEN Number Of Dep Are Nr "4" (Passed after 3ms)
+Fi=014,Fa=003,Pe=001 # 15>   STEP 7/8: WHEN Modify Department With id "4" and name "f2bc0d91ce714017b91ecd5f93283c9a"...
+Fi=014,Fa=003,Pe=001 # 15>   STEP 7/8: /* after use mysql */
+Fi=014,Fa=003,Pe=001 # 15>   STEP 7/8: WHEN Modify Department With id "4" and name "f2bc0d91ce714017b91ecd5f93283c9a" (Passed after 10ms)
+Fi=014,Fa=003,Pe=001 # 15>   STEP 8/8: THEN For id "4" has name "f2bc0d91ce714017b91ecd5f93283c9a"...
+Fi=014,Fa=003,Pe=001 # 15>   STEP 8/8: /* after use mysql */
+Fi=014,Fa=003,Pe=001 # 15>   STEP 8/8: THEN For id "4" has name "f2bc0d91ce714017b91ecd5f93283c9a" (Passed after 2ms)
+[testcontainers.org 00:04:58.94] Stop Docker container 8af7edfce6cd
+[testcontainers.org 00:05:02.47] Delete Docker container 8af7edfce6cd
+Fi=015,Fa=003,Pe=000 # 15>   SCENARIO RESULT: Passed after 52s 081ms
+Fi=015,Fa=003,Pe=001 # 16> SCENARIO: CrudSimpleTable [provider: "Npgsql_EntityFrameworkCore_PostgreSQL"]
+Fi=015,Fa=003,Pe=001 # 16>   STEP 1/8: GIVEN The Database IsCreated [provider: "Npgsql_EntityFrameworkCore_PostgreSQL"]...
+Fi=015,Fa=003,Pe=001 # 16>   STEP 1/8: /* tables Department */
+Fi=015,Fa=003,Pe=001 # 16>   STEP 1/8: /* table Department */
+Fi=015,Fa=003,Pe=001 # 16>   STEP 1/8: /* column => long IDDepartment  */
+Fi=015,Fa=003,Pe=001 # 16>   STEP 1/8: /* column => string Name  */
+[testcontainers.org 00:05:32.60] Docker container 480b5661ff04 created
+[testcontainers.org 00:05:32.61] Start Docker container 480b5661ff04
+[testcontainers.org 00:05:33.96] Wait for Docker container 480b5661ff04 to complete readiness checks
+[testcontainers.org 00:05:35.01] Docker container 480b5661ff04 ready
+Fi=015,Fa=003,Pe=001 # 16>   STEP 1/8: /* connection : Host=127.0.0.1;Port=49224;Database=testf7dd8de6701649c1bbc703c20b21dd68;Username=postgres;Password=postgres;Persist Security Info=True */
+Fi=015,Fa=003,Pe=001 # 16>   STEP 1/8: /* before created */
+Fi=015,Fa=003,Pe=001 # 16>   STEP 1/8: /* after created */
+Fi=015,Fa=003,Pe=001 # 16>   STEP 1/8: GIVEN The Database IsCreated [provider: "Npgsql_EntityFrameworkCore_PostgreSQL"] (Passed after 2s 573ms)
+Fi=015,Fa=003,Pe=001 # 16>   STEP 2/8: THEN Number Of Dep Are Nr "0"...
+Fi=015,Fa=003,Pe=001 # 16>   STEP 2/8: THEN Number Of Dep Are Nr "0" (Passed after 6ms)
+Fi=015,Fa=003,Pe=001 # 16>   STEP 3/8: WHEN Creating Nr "5" Departments...
+Fi=015,Fa=003,Pe=001 # 16>   STEP 3/8: WHEN Creating Nr "5" Departments (Passed after 2ms)
+Fi=015,Fa=003,Pe=001 # 16>   STEP 4/8: THEN Number Of Dep Are Nr "5"...
+Fi=015,Fa=003,Pe=001 # 16>   STEP 4/8: THEN Number Of Dep Are Nr "5" (Passed after 1ms)
+Fi=015,Fa=003,Pe=001 # 16>   STEP 5/8: WHEN Deleting Department With id "2"...
+Fi=015,Fa=003,Pe=001 # 16>   STEP 5/8: WHEN Deleting Department With id "2" (Passed after 4ms)
+Fi=015,Fa=003,Pe=001 # 16>   STEP 6/8: THEN Number Of Dep Are Nr "4"...
+Fi=015,Fa=003,Pe=001 # 16>   STEP 6/8: THEN Number Of Dep Are Nr "4" (Passed after 1ms)
+Fi=015,Fa=003,Pe=001 # 16>   STEP 7/8: WHEN Modify Department With id "4" and name "1682c4156b3b455a92dcebb37bcca4c9"...
+Fi=015,Fa=003,Pe=001 # 16>   STEP 7/8: WHEN Modify Department With id "4" and name "1682c4156b3b455a92dcebb37bcca4c9" (Passed after 1ms)
+Fi=015,Fa=003,Pe=001 # 16>   STEP 8/8: THEN For id "4" has name "1682c4156b3b455a92dcebb37bcca4c9"...
+Fi=015,Fa=003,Pe=001 # 16>   STEP 8/8: THEN For id "4" has name "1682c4156b3b455a92dcebb37bcca4c9" (Passed after 1ms)
+[testcontainers.org 00:05:35.12] Stop Docker container 480b5661ff04
+[testcontainers.org 00:05:35.61] Delete Docker container 480b5661ff04
+Fi=016,Fa=003,Pe=000 # 16>   SCENARIO RESULT: Passed after 33s 139ms
+Fi=016,Fa=003,Pe=001 # 17> SCENARIO: CrudSimpleTable [provider: "Microsoft_EntityFrameworkCore_In_Memory"]
+Fi=016,Fa=003,Pe=001 # 17>   STEP 1/8: GIVEN The Database IsCreated [provider: "Microsoft_EntityFrameworkCore_In_Memory"]...
+Fi=016,Fa=003,Pe=001 # 17>   STEP 1/8: /* tables Department */
+Fi=016,Fa=003,Pe=001 # 17>   STEP 1/8: /* table Department */
+Fi=016,Fa=003,Pe=001 # 17>   STEP 1/8: /* column => long IDDepartment  */
+Fi=016,Fa=003,Pe=001 # 17>   STEP 1/8: /* column => string Name  */
+Fi=016,Fa=003,Pe=001 # 17>   STEP 1/8: /* connection : test0b384e12de264af4bf56c889dab7a6d0 */
+Fi=016,Fa=003,Pe=001 # 17>   STEP 1/8: /* before created */
+Fi=016,Fa=003,Pe=001 # 17>   STEP 1/8: /* after created */
+Fi=016,Fa=003,Pe=001 # 17>   STEP 1/8: GIVEN The Database IsCreated [provider: "Microsoft_EntityFrameworkCore_In_Memory"] (Passed after 4ms)
+Fi=016,Fa=003,Pe=001 # 17>   STEP 2/8: THEN Number Of Dep Are Nr "0"...
+Fi=016,Fa=003,Pe=001 # 17>   STEP 2/8: THEN Number Of Dep Are Nr "0" (Passed after 4ms)
+Fi=016,Fa=003,Pe=001 # 17>   STEP 3/8: WHEN Creating Nr "5" Departments...
+Fi=016,Fa=003,Pe=001 # 17>   STEP 3/8: WHEN Creating Nr "5" Departments (Passed after <1ms)
+Fi=016,Fa=003,Pe=001 # 17>   STEP 4/8: THEN Number Of Dep Are Nr "5"...
+Fi=016,Fa=003,Pe=001 # 17>   STEP 4/8: THEN Number Of Dep Are Nr "5" (Passed after <1ms)
+Fi=016,Fa=003,Pe=001 # 17>   STEP 5/8: WHEN Deleting Department With id "2"...
+Fi=016,Fa=003,Pe=001 # 17>   STEP 5/8: WHEN Deleting Department With id "2" (Passed after 4ms)
+Fi=016,Fa=003,Pe=001 # 17>   STEP 6/8: THEN Number Of Dep Are Nr "4"...
+Fi=016,Fa=003,Pe=001 # 17>   STEP 6/8: THEN Number Of Dep Are Nr "4" (Passed after <1ms)
+Fi=016,Fa=003,Pe=001 # 17>   STEP 7/8: WHEN Modify Department With id "4" and name "9d536353fed142f7b49eda52f1f8bb1c"...
+Fi=016,Fa=003,Pe=001 # 17>   STEP 7/8: WHEN Modify Department With id "4" and name "9d536353fed142f7b49eda52f1f8bb1c" (Passed after <1ms)
+Fi=016,Fa=003,Pe=001 # 17>   STEP 8/8: THEN For id "4" has name "9d536353fed142f7b49eda52f1f8bb1c"...
+Fi=016,Fa=003,Pe=001 # 17>   STEP 8/8: THEN For id "4" has name "9d536353fed142f7b49eda52f1f8bb1c" (Passed after <1ms)
+Fi=017,Fa=003,Pe=000 # 17>   SCENARIO RESULT: Passed after 23ms
+Fi=017,Fa=003,Pe=001 # 18> SCENARIO: CrudSimpleTable [provider: "Microsoft_EntityFrameworkCore_Sqlite_File"]
+Fi=017,Fa=003,Pe=001 # 18>   STEP 1/8: GIVEN The Database IsCreated [provider: "Microsoft_EntityFrameworkCore_Sqlite_File"]...
+Fi=017,Fa=003,Pe=001 # 18>   STEP 1/8: /* tables Department */
+Fi=017,Fa=003,Pe=001 # 18>   STEP 1/8: /* table Department */
+Fi=017,Fa=003,Pe=001 # 18>   STEP 1/8: /* column => long IDDepartment  */
+Fi=017,Fa=003,Pe=001 # 18>   STEP 1/8: /* column => string Name  */
+Fi=017,Fa=003,Pe=001 # 18>   STEP 1/8: /* connection : Data Source=testab0d649d17dd4cea84f482176607a96e.db */
+Fi=017,Fa=003,Pe=001 # 18>   STEP 1/8: /* before created */
+Fi=017,Fa=003,Pe=001 # 18>   STEP 1/8: /* after created */
+Fi=017,Fa=003,Pe=001 # 18>   STEP 1/8: GIVEN The Database IsCreated [provider: "Microsoft_EntityFrameworkCore_Sqlite_File"] (Passed after 25ms)
+Fi=017,Fa=003,Pe=001 # 18>   STEP 2/8: THEN Number Of Dep Are Nr "0"...
+Fi=017,Fa=003,Pe=001 # 18>   STEP 2/8: THEN Number Of Dep Are Nr "0" (Passed after 3ms)
+Fi=017,Fa=003,Pe=001 # 18>   STEP 3/8: WHEN Creating Nr "5" Departments...
+Fi=017,Fa=003,Pe=001 # 18>   STEP 3/8: WHEN Creating Nr "5" Departments (Passed after 10ms)
+Fi=017,Fa=003,Pe=001 # 18>   STEP 4/8: THEN Number Of Dep Are Nr "5"...
+Fi=017,Fa=003,Pe=001 # 18>   STEP 4/8: THEN Number Of Dep Are Nr "5" (Passed after 5ms)
+Fi=017,Fa=003,Pe=001 # 18>   STEP 5/8: WHEN Deleting Department With id "2"...
+Fi=017,Fa=003,Pe=001 # 18>   STEP 5/8: WHEN Deleting Department With id "2" (Passed after 10ms)
+Fi=017,Fa=003,Pe=001 # 18>   STEP 6/8: THEN Number Of Dep Are Nr "4"...
+Fi=017,Fa=003,Pe=001 # 18>   STEP 6/8: THEN Number Of Dep Are Nr "4" (Passed after 1ms)
+Fi=017,Fa=003,Pe=001 # 18>   STEP 7/8: WHEN Modify Department With id "4" and name "1117c7377f1644d696bb1edfe8d5f75a"...
+Fi=017,Fa=003,Pe=001 # 18>   STEP 7/8: WHEN Modify Department With id "4" and name "1117c7377f1644d696bb1edfe8d5f75a" (Passed after 10ms)
+Fi=017,Fa=003,Pe=001 # 18>   STEP 8/8: THEN For id "4" has name "1117c7377f1644d696bb1edfe8d5f75a"...
+Fi=017,Fa=003,Pe=001 # 18>   STEP 8/8: THEN For id "4" has name "1117c7377f1644d696bb1edfe8d5f75a" (Passed after 6ms)
+Fi=018,Fa=003,Pe=000 # 18>   SCENARIO RESULT: Passed after 80ms
+[xUnit.net 00:06:06.10]     TestEFCoreProviders.TestSingleTable.OnScenarioTearDown [SKIP]
+Fi=018,Fa=003,Pe=000 #   > FEATURE FINISHED: TestSimpleTablesMultipleData
+Fi=018,Fa=003,Pe=000 #   > FEATURE FINISHED: TestSingleTable
+  Skipped TestEFCoreProviders.TestSingleTable.OnScenarioTearDown [1 ms]
+
+Failed!  - Failed:     3, Passed:    15, Skipped:     2, Total:    20, Duration: 6 m 4 s - TestEFCoreProviders.dll (net7.0)

@@ -1,7 +1,8 @@
 
 //dotnet watch test --filter "DisplayName~Memory"
 namespace TestEFCoreProviders;
-public partial class TestSingleTable:IScenarioTearDown
+[Collection("NotInParallel")]
+public partial class TestSingleTable:IScenarioTearDown, IAsyncLifetime
 {
     StartDatabase startDatabase;
     public TestSingleTable()
@@ -83,5 +84,15 @@ public partial class TestSingleTable:IScenarioTearDown
     {
         TestOutput.WriteLine("tear down ");
         await startDatabase.DisposeAsync();
+    }
+
+    public async Task InitializeAsync()
+    {
+       await Task.Delay(1000);
+    }
+
+    public async Task DisposeAsync()
+    {
+        await OnScenarioTearDown();
     }
 }

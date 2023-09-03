@@ -9,7 +9,7 @@
 
 
 
-
+[assembly: CollectionBehavior(DisableTestParallelization = true)]
 [assembly: Example.LightBDD.XUnit2.ConfiguredLightBddScope]
 /*
  * This is a LightBDD specific, experimental attribute enabling inter-class test parallelization

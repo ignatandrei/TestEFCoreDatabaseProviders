@@ -4,7 +4,10 @@ namespace TestEFCoreProviders;
 
 class StartDatabase: IAsyncDisposable
 {
-    
+    public string Name()
+    {
+        return Container?.Name ?? "";
+    }
     private SqliteConnection? _connection;//necessary for sqlite
     IContainer? Container;
     string connectionStringCache = "";
@@ -102,7 +105,7 @@ class StartDatabase: IAsyncDisposable
     private T? GetContextFromConnection<T>(string con, EFCoreProvider provider)
         where T : DbContext
     {
-        DbContextOptionsBuilder<SimpleTableDBContext> builder = new();
+        DbContextOptionsBuilder<T> builder = new();
         switch (provider)
         {
             case EFCoreProvider.Microsoft_EntityFrameworkCore_SqlServer:
@@ -174,15 +177,22 @@ class StartDatabase: IAsyncDisposable
     }
     public async ValueTask DisposeAsync()
     {
-        
+        if (_connection != null)
+        {
+            _connection.Dispose();
+            _connection = null;
+        }
+
         if (Container != null)
         {
-            //await Task.Delay(60_000);
+            
             await Container.StopAsync();
             await Container.DisposeAsync();
-          
+            Container= null;
+            //docker needs sometime time
+            //await Task.Delay(30_000);
+            
         }
-        if(_connection != null)
-            _connection.Dispose();
+        
     }
 }
