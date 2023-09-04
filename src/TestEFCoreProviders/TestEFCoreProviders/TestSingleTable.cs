@@ -86,9 +86,9 @@ public partial class TestSingleTable:IScenarioTearDown, IAsyncLifetime
         await startDatabase.DisposeAsync();
     }
 
-    public async Task InitializeAsync()
+    public  Task InitializeAsync()
     {
-       await Task.Delay(1000);
+        return Task.CompletedTask;
     }
 
     public async Task DisposeAsync()

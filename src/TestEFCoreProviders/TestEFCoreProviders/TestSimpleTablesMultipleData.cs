@@ -33,9 +33,9 @@ public partial class TestSimpleTablesMultipleData :IScenarioTearDown , IAsyncLif
         await OnScenarioTearDown();
     }
 
-    public async Task InitializeAsync()
+    public Task InitializeAsync()
     {
-        await Task.Delay(1000);
+        return Task.CompletedTask;
     }
 
     [Fact(Skip = "interface")]
