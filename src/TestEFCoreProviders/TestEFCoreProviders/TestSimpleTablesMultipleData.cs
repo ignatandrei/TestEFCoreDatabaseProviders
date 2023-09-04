@@ -27,7 +27,10 @@ public partial class TestSimpleTablesMultipleData :IScenarioTearDown , IAsyncLif
            .AddAsyncSteps(
            _ => Given_The_Database_IsCreated(provider),
            _ => CRUD_Tbl_BIGINT_Table(nrRecs),
-           _ => CRUD_Tbl_DATETIME_Table(nrRecs)
+           _ => CRUD_Tbl_DATETIME_Table(nrRecs),
+           _=> When_Search_For_Date_That_Is_Criteria_Than_nr_the_results_number_are(provider,DateTime.UtcNow.AddMinutes(-5),GeneratorFromDB.SearchCriteria.Greater,nrRecs-1),
+           _ => When_Search_For_Date_That_Is_Criteria_Than_nr_the_results_number_are(provider, DateTime.UtcNow.AddMinutes(5), GeneratorFromDB.SearchCriteria.Greater, 0),
+           _ => Finish()
            ).RunAsync();
     }
     [Fact(Skip = "interface")]

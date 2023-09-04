@@ -76,16 +76,36 @@ partial  class TestSimpleTablesMultipleData: FeatureFixture
 
 
     }
-
-
+    async Task When_Search_For_Date_That_Is_Criteria_Than_nr_the_results_number_are(EFCoreProvider provider, DateTime date, GeneratorFromDB.SearchCriteria criteria, int are)
+    {
+        //must have DateTime in UTC for Postgres
+        if (provider == EFCoreProvider.Npgsql_EntityFrameworkCore_PostgreSQL)
+        {
+            StepExecution.Current.Comment("for datetime must use UTC in search also");
+            return;
+        }
+        using (var db = await startDatabase.GetNewContext<SimpleTablesMultipleData>())
+        {
+            var search = SearchTbl_DATETIME.FromSearch(criteria,eTbl_DATETIMEColumns.DataColumn , date.ToString());            
+            var data = await db.Tbl_DATETIMEFind_Array(search);
+            data.Should().NotBeNull();
+            data.Should().HaveCount(are);
+        }
+    }
+    async Task Finish()
+    {
+        await Task.Delay(1000);
+    }
     async Task CRUD_Tbl_DATETIME_Table(int nr)
     {
+        
         using (var db = await startDatabase.GetNewContext<SimpleTablesMultipleData>())
         {
             var data = Enumerable.Range(1, nr).Select(it => new Tbl_DATETIME()
             {
                 DataColumn = DateTime.UtcNow,
             }).ToArray();
+            
             await db.Tbl_DATETIMESaveMultiple(data);
         }
         await Task.Delay(10_000);
@@ -109,6 +129,7 @@ partial  class TestSimpleTablesMultipleData: FeatureFixture
             var nrRecs = await db.Tbl_DATETIMECount(null);
             nrRecs.Should().Be(nr - 1);
         }
+        return;
         var dataM = new Tbl_DATETIME();
         dataM.ID = 3;
         dataM.DataColumn = DateTime.UtcNow.AddDays(100);

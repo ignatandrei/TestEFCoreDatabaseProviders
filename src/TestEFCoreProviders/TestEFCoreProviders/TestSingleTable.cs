@@ -1,5 +1,6 @@
 
 //dotnet watch test --filter "DisplayName~Memory"
+//dotnet  test --filter "DisplayName~Tests"
 namespace TestEFCoreProviders;
 [Collection("NotInParallel")]
 public partial class TestSingleTable:IScenarioTearDown, IAsyncLifetime

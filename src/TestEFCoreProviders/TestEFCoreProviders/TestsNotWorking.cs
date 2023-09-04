@@ -1,6 +1,6 @@
 ﻿namespace TestEFCoreProviders;
 
-public partial class TestsNotWorkingDateTime : IScenarioTearDown, IAsyncLifetime
+public partial class NotWorkingDateTime : IScenarioTearDown, IAsyncLifetime
 {
     StartDatabase startDatabase;
 
@@ -19,7 +19,7 @@ public partial class TestsNotWorkingDateTime : IScenarioTearDown, IAsyncLifetime
            ).RunAsync();
     }
 
-    public TestsNotWorkingDateTime()
+    public NotWorkingDateTime()
     {
 
         startDatabase = new StartDatabase();

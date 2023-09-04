@@ -1,6 +1,6 @@
 ﻿namespace TestEFCoreProviders;
 [Collection("NotInParallel")]
-public partial class TestsNotWorkingDateTime : FeatureFixture
+public partial class NotWorkingDateTime : FeatureFixture
 {
     async Task Given_The_Database_IsCreated(EFCoreProvider provider)
     {

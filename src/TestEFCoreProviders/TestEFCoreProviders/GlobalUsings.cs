@@ -13,5 +13,4 @@ global using Npgsql;
 global using Testcontainers.PostgreSql;
 global using Xunit.Sdk;
 global using System.Threading.Tasks;
-global using Microsoft.Data.Sqlite;
 global using System.Linq;
