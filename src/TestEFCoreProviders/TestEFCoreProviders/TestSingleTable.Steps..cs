@@ -1,7 +1,3 @@
-
-using Microsoft.Data.Sqlite;
-using System.Linq;
-
 namespace TestEFCoreProviders;
 public partial class TestSingleTable: FeatureFixture
 {
